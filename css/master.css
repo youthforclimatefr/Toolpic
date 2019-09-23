@@ -56,6 +56,9 @@ html {
     right: 5px;
     top: 5px;
   }
+  .menu-bar .bar-top .copyright-text {
+    display: none;
+  }
 }
 .menu-bar .bar-top .info .title {
   margin: 0;

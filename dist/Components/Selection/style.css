@@ -1,0 +1,22 @@
+.selections {
+  display: block;
+}
+.selections .item {
+  display: inline-block;
+  margin: 3px;
+  padding: 5px;
+
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  border: 1px solid #dddddd;
+}
+.selections .item > * {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+
+}
+.selections .item .icon-context {
+  fill: #bfbfbf;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.1));
+}

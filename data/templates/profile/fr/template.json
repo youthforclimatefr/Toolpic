@@ -1,0 +1,42 @@
+{
+  "name": "Profile Picture",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/profile/template.json",
+  "preview": "data/templates/profile/fr/preview.jpg",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "data/templates/profile/fr/Logo_YFC_France.svg",
+      "alias": "1:1"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Gotham-Ultra",
+      "src": "fonts/Gotham/Gotham Ultra.otf",
+      "mime": "font/opentype"
+    },
+    {
+      "name": "Gotham-Medium",
+      "src": "fonts/Gotham/Gotham Medium.otf",
+      "mime": "font/opentype"
+    }
+  ],
+  "fields": [
+    {
+      "type": "Selection",
+      "description": "Background",
+      "key": "pic",
+      "default": {
+        "data": "data/templates/profile/fr/bg.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

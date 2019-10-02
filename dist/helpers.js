@@ -108,11 +108,17 @@ export async function svgContext(url) {
 }
 
 
-export function openFile() {
+export function openFile(opts) {
+
+  console.log(opts);
+
   return new Promise(function(resolve, reject) {
     const hiddenInput = Object.assign(document.createElement("input"), {
       type: 'file'
     });
+
+    document.body.append(hiddenInput);
+
     hiddenInput.addEventListener("change", async function(event) {
       const file = event.target.files[0];
 
@@ -120,40 +126,28 @@ export function openFile() {
 
       const imgCompressedInfo = new imageCompressor(file, {
         checkOrientation: true,
-        maxWidth: 1200,
-        maxHeight: 1200,
+        maxWidth: opts.width,
+        maxHeight: opts.height,
         minWidth: 0,
         minHeight: 0,
         width: undefined,
         height: undefined,
-        quality: 0.7,
+        quality: 0.5,
         beforeDraw: null,
         drew: null,
         success: async function(result) {
           const dataURL = await blobToDataURL(result);
 
-          const imgInfo = imageInfo(dataURL);
+          const imgInfo = imageInfo(dataURL, opts.mime);
+
+
+          document.body.removeChild(hiddenInput);
 
           resolve(imgInfo);
 
         }
       });
 
-      /*const reader = new FileReader();
-      reader.addEventListener("load", async function(event) {
-        const dataURL = event.target.result;
-
-        console.log(dataURL.length);
-
-        const imgInfo = imageInfo(dataURL);
-
-        console.log(imgInfo);
-
-        resolve(imgInfo);
-
-      });
-
-      reader.readAsDataURL(file);*/
     });
     hiddenInput.click();
   });

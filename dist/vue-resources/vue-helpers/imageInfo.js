@@ -774,13 +774,15 @@ function(e) {
 });
 
 
-export default function imageInfo(url) {
+export default function imageInfo(url, mime) {
+  console.log(mime);
+
   return new Promise(function(resolve, reject) {
 
     loadImage(url, function(img, data) {
-      
+
       resolve({
-        data: img.toDataURL('image/png'),
+        data: img.toDataURL(mime),
         width: img.width,
         height: img.height,
         ratio: img.width / img.height

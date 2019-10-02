@@ -73,7 +73,7 @@
       }
     },
     {
-      "type": "checklist",
+      "type": "Checklist",
       "description": "Optionen",
       "key": "options",
       "default": [true, false],
@@ -121,7 +121,7 @@
       }
     },
     {
-      "type": "line",
+      "type": "Line",
       "description": "Subtitle",
       "key": "subtitle",
       "default": "Ideen tanken beim",
@@ -142,20 +142,15 @@
       "type": "Selection",
       "description": "Logo",
       "key": "logo",
-      "default": "data/resources/logo-2019-2.svg",
+      "default": "data/resources/logo-2.svg",
       "properties": {
+        "mime": "image/png",
+        "width": 200,
+        "height": 200,
         "items": [
           {
             "type": "value",
-            "value": "data/resources/logo-2019-2.svg"
-          },
-          {
-            "type": "value",
             "value": "data/resources/logo.svg"
-          },
-          {
-            "type": "value",
-            "value": "data/resources/logo-2019.svg"
           },
           {
             "type": "value",

@@ -38,7 +38,13 @@ class TextComponent extends SuperComponent {
             return item.value;
           },
           async file() {
-            return openFile();
+
+
+            return openFile({
+              width: propInfo.properties.width || 1200,
+              height: propInfo.properties.height || 1200,
+              mime: propInfo.properties.mime || 'image/jpeg'
+            });
           }
         }
       };

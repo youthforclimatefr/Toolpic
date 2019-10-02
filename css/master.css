@@ -19,7 +19,7 @@ html {
 }
 .menu-bar {
   padding: 5px 5px;
-  background-color: #ebebeb;
+  background-color: #0f0f0f;
   font-size: 0;
   box-sizing: border-box;
   height: 61px;
@@ -45,7 +45,9 @@ html {
 }
 .menu-bar .bar-top .copyright-text {
   display: inline-block;
-  color: #333;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  letter-spacing: 0.5px;
 }
 .menu-bar .bar-top .copyright-text a {
   color: inherit;
@@ -56,6 +58,8 @@ html {
     right: 5px;
     top: 5px;
   }
+}
+@media screen and (max-width: 600px) {
   .menu-bar .bar-top .copyright-text {
     display: none;
   }
@@ -92,11 +96,12 @@ html {
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   overflow: hidden;
-  border: 1px solid #fff;
-  transition: box-shadow 0.25s;
+  border: 1px solid rgb(0, 0, 0);
+  transform: scale(1);
+  transition: transform 0.25s;
 }
 .menu-bar .menu-select-template > ul > li:hover .template-preview {
-  box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
 
 }
 .menu-bar .menu-select-template > ul > li .template-preview img {
@@ -120,12 +125,13 @@ html {
 }
 
 .menu-bar {
-  border-bottom: 1px solid #e0dfdf;
+  border-bottom: 1px solid #080808;
 }
 .menu-bar .menu-select-template {
   transform: translate(0, -130%);
   opacity: 0;
   transition: all .75s;
+  color: #fff;
 
 }
 .menu-bar.menu-open .menu-select-template {
@@ -137,6 +143,7 @@ html {
 .main {
   font-size: 0;
   height: calc(100vh - 61px);
+  background-color: #181818;
 }
 .main > div {
   display: inline-block;
@@ -146,7 +153,7 @@ html {
   height: 100%;
   width: 400px;
   font-size: 1rem;
-  border-right: 1px solid #d7d7d7;
+  border-right: 1px solid #111111;
   box-sizing: border-box;
   overflow: scroll;
 
@@ -234,6 +241,7 @@ html {
 
 .components > div {
   padding: 4px 5px;
+  color: #fff;
 }
 .components > div .component-label {
   font-size: 0.9em;
@@ -279,7 +287,7 @@ html {
   text-align: right;
 }
 .bar-top .btns .btn {
-  background-color: #ebebeb !important;
+  background-color: #0f0f0f !important;
   border-radius: 50%;
 }
 .popup .btn {
@@ -329,7 +337,7 @@ html {
   cursor: pointer;
   padding: 12px;
   border-radius: 50%;
-  background-image: url('data:image/svg+xml;uft8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" style="fill: #000; opacity: 0.1;" /></svg>');
+  background-image: url('data:image/svg+xml;uft8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" style="fill: rgba(41, 41, 41, 1);" /></svg>');
   background-size: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -345,10 +353,10 @@ html {
 }
 
 .btn-open-menu svg path {
-  fill: rgba(0, 0, 0, 0.2);
+  fill: #808080;
 }
 .btn-export svg path {
-  fill: rgba(0, 0, 0, 0.3);
+  fill: #808080;
 }
 
 

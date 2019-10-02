@@ -43,14 +43,9 @@
       "type": "Selection",
       "description": "Filling Mode",
       "key": "fillingMode",
-      "default": 0,
+      "default": 1,
       "properties": {
         "items": [
-          {
-            "type": "value",
-            "value": 0,
-            "render": "data/resources/logo-2019.svg"
-          },
           {
             "type": "value",
             "value": 1,

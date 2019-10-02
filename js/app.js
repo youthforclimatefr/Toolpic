@@ -36,7 +36,9 @@ const app = new Vue({
     __activeTemplate: null,
     popupOpen: false,
     __renderedBlob: null,
-    renderedImage: null
+    renderedImage: null,
+    __renderedBlobSVG: null,
+    __renderedSVG: null
   },
   asyncComputed: {
     async templates() {
@@ -121,7 +123,10 @@ const app = new Vue({
       this.__renderedBlob = null;
       this.renderedImage = null;
 
-      const response1 = await fetch('https://api.fridaysforfuture.de:65324/emulate', {
+      const endpoint = 'https://api.fridaysforfuture.de:65324/emulate';
+      //const endpoint = 'http://localhost:65324/emulate'
+
+      const response1 = fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -134,10 +139,36 @@ const app = new Vue({
         })
       });
 
-
-
-      const blob = await response1.blob();
+      const blob = await (await response1).blob();
       const url = URL.createObjectURL(blob);
+
+      this.__renderedBlob = blob;
+      this.renderedImage = url;
+
+      console.log(dataset.backgroundImage.data.length);
+
+
+
+
+
+      const response2 = fetch(endpoint + '/svg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          template: this.__activeTemplate,
+          doc: this.__docIndex,
+          data: dataset,
+          renderings: 1
+        })
+      });
+
+      const blob2 = await (await response2).blob();
+      const url2 = URL.createObjectURL(blob);
+
+      this.__renderedBlobSVG = blob2;
+      this.__renderedSVG = url2;
 
 
       /*const svgContext = svg.outerHTML;
@@ -159,8 +190,9 @@ const app = new Vue({
       const url = URL.createObjectURL(blob);*/
 
 
-      this.__renderedBlob = blob;
-      this.renderedImage = url;
+
+
+
 
       console.log(this.renderedImage);
 
@@ -175,6 +207,16 @@ const app = new Vue({
         console.log("No support", this.renderedImage);
         //openTab(this.renderedImage);
         window.open(this.renderedImage, '_blank');
+      }
+    },
+    svgDownload() {
+      if (typeof document.createElement('a').download != "undefined") {
+        download(this.__renderedBlobSVG, "SharePic.svg", "image/svg+xml");
+      }
+      else {
+        console.log("No support", this.renderedImage);
+        //openTab(this.renderedImage);
+        window.open(this.renderedSVG, '_blank');
       }
     }
   }

@@ -123,6 +123,7 @@ A *field object* contains the general information about the field as the require
   "description": "Description",
   "key": "propName",
   "default": null,
+  "required": [true, true],
   "properties": {
 
   }
@@ -133,6 +134,7 @@ A *field object* contains the general information about the field as the require
 * `description`: Graphically description text
 * `key`: Related property name within the rendering instance's data controller
 * `default`: Default value for the rendering instance's data controller
+* `required`: Array that describes in which documents this property field will be used. Normally, **do not use** this property, because you should not exclude properties normally.
 * `properties`: Object containing properties that are specific for this `type` of component
 
 **The** `type` **property has to be a valid class name of a component class exported to** `Components` **of the module namespace object!**
@@ -156,6 +158,43 @@ A *field object* contains the general information about the field as the require
 ```
 
 **To understand all the others components and their properties, have a look at any** `template.json` **file! :)**
+
+### Font Object
+
+To embed a font to a template, just add it to the `fonts` array. A font description object looks like the following:
+
+```json
+{
+  "name": "Jost-600",
+  "src": "fonts/Jost/Jost-600-Semi.ttf",
+  "mime": "font/truetype"
+}
+```
+
+### Documents
+
+Each template can server different documents (e.g. for twitter or facebook) that have different sizes.
+A document is described as the following:
+
+
+```json
+{
+  "width": 1200,
+  "height": 1200,
+  "src": "data/templates/date-2/de/1200x1200.svg",
+  "alias": "Facebook, Instagram"
+}
+```
+
+The properties and required `fields` are always the same in each document.
+To **exclude** a property field for a specific document of a template, it is normally used for, use the `required` property within a *field description object*. This is an array with boolean values that describe wether the document with the same index would not use this property.
+
+```javascript
+{
+  "type": "Line",
+  "required": [false, true] // Property field would just be used/displayed while editing the 2nd document, not the 1st
+}
+```
 
 ## Format Document Index
 

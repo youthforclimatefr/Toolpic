@@ -186,7 +186,7 @@ A document is described as the following:
 }
 ```
 
-The properties and required `fields` are always the same in each document.
+The properties and used `fields` are always the same in each document.
 To **exclude** a property field for a specific document of a template, it is normally used for, use the `required` property within a *field description object*. This is an array with boolean values that describe wether the document with the same index would not use this property.
 
 ```javascript

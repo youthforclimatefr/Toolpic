@@ -343,7 +343,7 @@ export default LineComponent;
 
 As described above, your rendering instance (instance of `Renderer`) conatins a `data` receiver that can be connected to components you create from the `template.json` file or, in theory, be modified manually by using any third party routine.
 
-The `context` is not just any SVG element but a living **Vue.js** enviorement. Within this context you can access all the properties of the `data` receiver of your instance as native javascript expressions just as **Vue.js** it does.
+The `context` is not just any SVG element but a living **Vue.js** environment. Within this context you can access all the properties of the `data` receiver of your instance as native javascript expressions just as **Vue.js** it does.
 For example, you could use a property value of a property that is binded to a `Line` component just using the typically Vue.js bracktes `{{ myTextProp }}` or bind it to any attribute using `v-bind:arg="myTextprop"`. At this point, it is not our work but the way **Vue.js** works.
 
 ## Directives
@@ -372,7 +372,7 @@ This is very cool to use if you have an element that has a dynamic size, you do 
 
 ### v-fitimage
 
-Often, a background image has to be fitted into the graphic as a `background-size: cover` would normally do. Because this is not offered by SVG, you can use the `v-fitimage` directive to get the same result.
+Often, a background image has to be fitted into the graphic as `background-size: cover` would normally do. Because this is not offered by SVG, you can use the `v-fitimage` directive to get the same result.
 
 ```xml
 <image href="URL" v-fitimage data-image-pos="0" style="transform-origin: 50% 50%;" />

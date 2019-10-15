@@ -298,3 +298,90 @@ class LineComponent extends SuperComponent {
 
 export default LineComponent;
 ```
+
+
+# Templating
+
+How is the templating working?
+
+As described above, your rendering instance (instance of `Renderer`) conatins a `data` receiver that can be connected to components you create from the `template.json` file or, in theory, be modified manually or using any third party routine.
+
+The `context` is not just any SVG element but a living **Vue.js** enviorement. Within this context you can access all the properties of the `data` receiver of your instance as native javascript expressions just as **Vue.js** it does.
+For example, you could use a property value of a property that is binded to a `Line` component just using the typically Vue.js bracktes `{{ myTextProp }}` or bind it to any attribute using `v-bind:arg="myTextprop"`. At this point, it is not our work but the way **Vue.js** works.
+
+## Directives
+
+Theoretically you could set every possible mathematically relation just using the properties and **Vue.js**. **But** sometimes this would need expressions that are too long to handle. Some of these situations are solved by *Toolpic Directives*.
+
+That means, within your **Vue.js** environment (`context` SVG node) you can use some static directives:
+
+### v-dynamic
+
+`v-dynamic` is a pretty cool directive that handles a dynamic size of any element you want to.
+In detail, this means that the element scales up to a **maximum width** or a **maximum height** but never gets bigger than any of them.
+
+```xml
+<g v-dynamic data-dynamic-width="1100" data-dynamic-height="700" style="transform-origin: 50% 50%;">
+  <!--any content here-->
+  <text style="font-size: 42px; alignment-baseline: middle; text-anchor: middle;" x="50%" y="50%">
+    My dynamic Text
+  </text>
+  <!--any content here-->
+</g>
+```
+
+This is very cool to use if you have an element that has a dynamic size, you do not know when developing a template (Mostly text elements).
+
+
+### v-fitimage
+
+Often, a background image has to be fitted into the graphic as a `background-size: cover` would normally do. Because this is not offered by SVG, you can use the `v-fitimage` directive to get the same result.
+
+```xml
+<image href="URL" v-fitimage data-image-pos="0" style="transform-origin: 50% 50%;" />
+```
+
+`data-image-pos` is the position of the image relative to its own size. It is a value between `-1` and `1` (`-1` = 100% left or top and `1` 100% right or bottom). The `transform-origin` should always be at center because, `transform` methods are used to scale and fit the image.
+
+## Custom Components
+
+Some other routines are solved with *Vue.js Custom Components*. As the directives, you can access these custom elements within the Vue.js environment.
+
+### Multline Text
+
+Often, you have a an array of text lines that need to be formatted correctly. Because SVG does not offer any clean solution, you would need to create a Vue `v-for` loop each time that handles the padding, margin, line height and all the other stuff.
+
+To automate this routine, you can use the `<multiline-text>` component. Here, you can pass everything you need just using attributes.
+
+```xml
+<multiline-text x="30" y="40" padding="10 15" text="['Line 1', 'Line 2']" lineheight="1.1" background="#1DA64A" verticalalign="center" css="font-size: 52px; font-family: 'Jost-400'; fill: #fff;"></multiline-text>
+```
+
+* `verticalalign`: `center` -> centered
+* `align`: `right`: -> right orientated
+* `lineheight`: Line height
+* `text`: Array containing all lines
+* `background`: Background color of rect
+* `padding`: Padding to background rect
+* `css`: Stylesheet for the `<text>` element behind the magic
+
+
+If `verticalalign` **is not** `center`: If the `y` value is `> 0`, it will be interpreted as top reference point. If it is `< 0`, it will be interpreted as bottom reference point.
+
+
+## Custom methods
+
+To control data in a routine way, you can use some custom methods that can be accessed within the Vue environment just as the directives or the custom components.
+
+### textToMultilineFormat()
+
+This method takes a given multiline text (Array) to a specific graphically ratio. That means, you do not have to care the user about when to set a linebreak to fit in perfectly into a 1:1 or 16:9 image. For example, it is used within the `Quote` template in which the typed quote has to fit into the image perfectly and a user is not abled to decice the linebreaks while writing the quote.
+
+```javascript
+textToMultilineFormat('This is a very long text that is just written down without thinking about potencial linebreaks', 1, 0.3, true)
+```
+
+1. `String` that should be formatted to the given ratio (e.g. `1`)
+2. Ratio the text has to be formatted to
+3. *Chars per line*: Value about the average ratio of each char in the used font (e.g. `0.3` - `0.4`). This depends to the font and is just an average value.
+4. Boolean wether a more correct algorithm should be used. Just use `false` if this seems to be to slow when using `true`

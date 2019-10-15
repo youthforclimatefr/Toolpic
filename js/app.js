@@ -126,7 +126,9 @@ const app = new Vue({
       const endpoint = 'https://api.fridaysforfuture.de:65324/emulate';
       //const endpoint = 'http://localhost:65324/emulate'
 
-      const response1 = fetch(endpoint, {
+      const format = this.__activeTemplate.type ? this.__activeTemplate.type : "png";
+
+      const response1 = fetch(endpoint + "/" + format, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -201,7 +203,10 @@ const app = new Vue({
     },
     download() {
       if (typeof document.createElement('a').download != "undefined") {
-        download(this.__renderedBlob, "SharePic.png", "image/png");
+        const mime = this.__activeTemplate.type == "jpg" ? "image/jpeg" : "image/png";
+        const format = this.__activeTemplate.type || "png";
+
+        download(this.__renderedBlob, "SharePic." + format, mime);
       }
       else {
         console.log("No support", this.renderedImage);

@@ -2,6 +2,7 @@
   "name": "Date 2",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date-2/template.json",
   "preview": "data/templates/date-2/preview.jpg",
+  "type": "jpg",
   "documents": [
     {
       "width": 1200,

@@ -2,6 +2,7 @@
   "name": "Info",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/info/template.json",
   "preview": "data/templates/info/preview.jpg",
+  "type": "jpg",
   "documents": [
     {
       "width": 1200,

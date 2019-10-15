@@ -2,6 +2,7 @@
   "name": "Long quote",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/quote/template.json",
   "preview": "data/templates/quote/preview.jpg",
+  "type": "jpg",
   "documents": [
     {
       "width": 1200,

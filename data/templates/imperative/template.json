@@ -2,6 +2,7 @@
   "name": "Imperative",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/imperative/template.json",
   "preview": "data/templates/imperative/preview.jpg",
+  "type": "jpg",
   "documents": [
     {
       "width": 1200,

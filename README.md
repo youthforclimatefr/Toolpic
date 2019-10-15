@@ -341,8 +341,6 @@ export default LineComponent;
 
 # Templating
 
-How is the templating working?
-
 As described above, your rendering instance (instance of `Renderer`) conatins a `data` receiver that can be connected to components you create from the `template.json` file or, in theory, be modified manually or using any third party routine.
 
 The `context` is not just any SVG element but a living **Vue.js** enviorement. Within this context you can access all the properties of the `data` receiver of your instance as native javascript expressions just as **Vue.js** it does.

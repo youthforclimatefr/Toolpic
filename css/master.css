@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   overflow: hidden;
+  height: 100%;
+  overflow: auto;
+  background-color: #181818;
 }
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -143,7 +146,6 @@ html {
 .main {
   font-size: 0;
   height: calc(100vh - 61px);
-  background-color: #181818;
 }
 .main > div {
   display: inline-block;

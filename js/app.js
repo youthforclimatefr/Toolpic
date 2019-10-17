@@ -146,9 +146,11 @@ const app = new Vue({
 
       this.__renderedBlob = blob;
       this.renderedImage = url;
-
-      console.log(dataset.backgroundImage.data.length);
-
+        
+        
+        if (dataset.backgroundImage) {
+          console.log(dataset.backgroundImage.data.length);
+        }
 
 
 

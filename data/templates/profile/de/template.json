@@ -15,6 +15,16 @@
       "name": "Jost-600",
       "src": "fonts/Jost/Jost-600-Semi.ttf",
       "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-700",
+      "src": "fonts/Jost/Jost-700-Bold.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-400",
+      "src": "fonts/Jost/Jost-400-Book.ttf",
+      "mime": "font/truetype"
     }
   ],
   "fields": [
@@ -37,7 +47,7 @@
       "type": "Line",
       "description": "Hashtag",
       "key": "hashtag",
-      "default": "#AllForClimate",
+      "default": "#NeustartKlima",
       "properties": {
 
       }

@@ -51,6 +51,42 @@
       "properties": {
 
       }
+    },
+    {
+      "type": "Line",
+      "description": "Langugage",
+      "key": "lang",
+      "default": "de",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Date",
+      "key": "date",
+      "default": "29. NOVEMBER",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Line",
+      "description": "First Red",
+      "key": "first",
+      "default": "KLIMA",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Second Red",
+      "key": "second",
+      "default": "STREIK",
+      "properties": {
+
+      }
     }
   ]
 }

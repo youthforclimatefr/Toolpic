@@ -123,7 +123,7 @@ const app = new Vue({
       this.__renderedBlob = null;
       this.renderedImage = null;
 
-      const endpoint = 'https://api.fridaysforfuture.de/emulate';
+      const endpoint = 'https://api.fridaysforfuture.de:65324/emulate';
       //const endpoint = 'http://localhost:65324/emulate'
 
       const format = this.__activeTemplate.type ? this.__activeTemplate.type : "png";

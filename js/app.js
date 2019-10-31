@@ -16,7 +16,8 @@ const app = new Vue({
     templateUrls: [
       //'data/templates/support/template.json',
       'data/templates/date-2/template.json',
-      'data/templates/map/template.json',
+      'data/templates/map/fr/template.json',
+      'data/templates/map/de/template.json',
       'data/templates/date/template.json',
       'data/templates/countdown/template.json',
       'data/templates/checklist/template.json',

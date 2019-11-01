@@ -30,7 +30,8 @@ const app = new Vue({
       'data/templates/quote/template.json',
       'data/templates/sentence/template.json',
       'data/templates/profile/de/template.json',
-      'data/templates/profile/fr/template.json'
+      'data/templates/profile/fr/template.json',
+      'data/templates/flyer2911/template.json'
     ],
     __docIndex: 0,
     __activeTemplate: null,
@@ -123,7 +124,7 @@ const app = new Vue({
       this.__renderedBlob = null;
       this.renderedImage = null;
 
-      const endpoint = 'https://api.fridaysforfuture.de/emulate';
+      const endpoint = 'https://api.fridaysforfuture.de:65324/emulate';
       //const endpoint = 'http://localhost:65324/emulate'
 
       const format = this.__activeTemplate.type ? this.__activeTemplate.type : "png";

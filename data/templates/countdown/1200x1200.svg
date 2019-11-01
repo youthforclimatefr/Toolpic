@@ -226,7 +226,7 @@
       </g>
     </g>
 
-    <image v-bind:xlink:href="typeof logo == 'object' ? logo.value : logo" x="25" y="1035" height="150" width="150" />
+    <image v-bind:xlink:href="typeof logo == 'object' ? logo.data : logo" x="25" y="1035" height="150" width="150" />
 
 
   </g>

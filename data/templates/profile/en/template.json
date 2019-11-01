@@ -1,25 +1,30 @@
 {
   "name": "Profile Picture",
-  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/profile/template.json",
-  "preview": "data/templates/profile/fr/preview.jpg",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/profile/fr/template.json",
+  "preview": "data/templates/profile/fr/preview.png",
   "documents": [
     {
       "width": 1200,
       "height": 1200,
-      "src": "data/templates/profile/fr/Logo_YFC_France.svg",
+      "src": "data/templates/profile/fr/document.svg",
       "alias": "1:1"
     }
   ],
   "fonts": [
     {
-      "name": "Gotham-Ultra",
-      "src": "fonts/Gotham/Gotham Ultra.otf",
-      "mime": "font/opentype"
+      "name": "Jost-600",
+      "src": "fonts/Jost/Jost-600-Semi.ttf",
+      "mime": "font/truetype"
     },
     {
-      "name": "Gotham-Medium",
-      "src": "fonts/Gotham/Gotham Medium.otf",
-      "mime": "font/opentype"
+      "name": "Jost-700",
+      "src": "fonts/Jost/Jost-700-Bold.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-400",
+      "src": "fonts/Jost/Jost-400-Book.ttf",
+      "mime": "font/truetype"
     }
   ],
   "fields": [
@@ -28,7 +33,7 @@
       "description": "Background",
       "key": "pic",
       "default": {
-        "data": "data/templates/profile/fr/bg.jpg"
+        "data": "data/templates/profile/en/bg.jpg"
       },
       "properties": {
         "items": [
@@ -42,7 +47,7 @@
       "type": "Line",
       "description": "Hashtag",
       "key": "hashtag",
-      "default": "#HowDareYOU",
+      "default": "#HowDareYou",
       "properties": {
 
       }
@@ -60,7 +65,7 @@
       "type": "Line",
       "description": "Date",
       "key": "date",
-      "default": "29 NOVEMBRE",
+      "default": "NOVEMBER 29",
       "properties": {
 
       }
@@ -69,7 +74,7 @@
       "type": "Line",
       "description": "First Red",
       "key": "first",
-      "default": "CLIMATIQUE",
+      "default": "CLIMATE",
       "properties": {
 
       }
@@ -78,7 +83,7 @@
       "type": "Line",
       "description": "Second Red",
       "key": "second",
-      "default": "GRÈVE",
+      "default": "STRIKE",
       "properties": {
 
       }

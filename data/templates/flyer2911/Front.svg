@@ -27,7 +27,7 @@
 
   <g class="main">
     <text class="text-shadow" filter="url(#dropshadow)" x="28.738px" y="1415.24px" style="font-family:'Jost-Bold', 'Jost*';font-weight:700;font-size:116.91px;fill:#fff;">Alle Generationen.</text>
-  	<text class="text-shadow" filter="url(#dropshadow)" x="900" y="857.221px" style="text-anchor: middle; font-family:'Jost-Bold', 'Jost*';font-weight:700;font-size:248.329px;fill:#fff;">
+  	<text class="text-shadow" filter="url(#dropshadow)" x="900" y="807.221px" style="text-anchor: middle; font-family:'Jost-Bold', 'Jost*';font-weight:700;font-size:248.329px;fill:#fff;">
       {{ time }}
     </text>
 
@@ -39,9 +39,11 @@
   		  </text>
       </g>
   	</g>
-		<text class="text-shadow" filter="url(#dropshadow)" x="88.624px" y="568.666px" style="font-family:'Jost-Black', 'Jost*';font-weight:900;font-size:570.824px;fill:#fff;">29
-			<tspan x="867.8px " y="568.666px ">.</tspan>11
+
+		<text class="text-shadow" filter="url(#dropshadow)" x="900" y="500" style="text-anchor: middle; font-family:'Jost-Black', 'Jost*';font-weight:900;font-size:490px;fill:#fff;">
+			29.11.
 		</text>
+
 		<g>
 			<g>
 				<path d="M1071.53,1449.92l-1136.37,0l0,370.118l1312.67,0l-176.296,-370.118Z" style="fill:#ef454e;"/>

@@ -115,6 +115,25 @@
    d="M305.727,263.93h16.14v5.19h-9.922v1.92h9.245v4.568h-9.245v2.055h10.057v5.189h-16.274V263.93z"
    id="path34" />
 </g>
+<g
+    id="additional"
+    transform="matrix(0.64,-0.23,0.23,0.64,-150,200)">
+
+      <defs
+   id="defs991">
+        <path
+   id="circlePath"
+   d="m 130,750 a 620,620 0 0 0 1240,0"
+   style="fill:none;stroke:#ff0000;stroke-width:10px" />
+
+   </defs>
+
+   <text font-variant="small-caps" v-bind:transform="'rotate(' + (-125 + textInfo(title, { fontFamily: 'Montserrat', fontVariant: 'small-caps', fontSize: ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }).width / 17.5) + ', 750, 750)'" v-bind:data-size="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:data-length="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:style="{ 'fill': '#000' }">
+      <textPath alignment-baseline="middle" text-anchor="middles" xlink:href="#circlePath" style="font-family: 'Montserrat'; font-weight: bold; font-variant: small-caps; font-variant-caps:small-caps; font-size: 160px;" v-bind:style="{ 'font-size': ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }">
+         {{ title }}
+      </textPath>
+   </text>
+</g>
 <rect
    fill="none"
    width="470"
@@ -277,27 +296,4 @@
    fill="#B4B930"
    d="M251.59,423.284c-1.029,5.519-3.249,10.445-7.892,14.623c-4.643,4.179-7.552,3.482-7.605,0  c-0.055-3.481,6.909-14.159,6.909-16.48s-7.66-9.049-6.732-11.721c0.929-2.671,6.091-3.6,7.571-1.511  C245.323,410.285,252.235,419.825,251.59,423.284"
    id="path114" />
-<g
-    id="additional"
-    transform="matrix(0.64,-0.23,0.23,0.64,-150,200)">
-
-
-
-      <defs
-   id="defs991">
-        <path
-   id="circlePath"
-   d="m 130,750 a 620,620 0 0 0 1240,0"
-   style="fill:none;stroke:#ff0000;stroke-width:10px" />
-
-      </defs>
-
-      <text font-variant="small-caps" v-bind:transform="'rotate(' + (-125 + textInfo(title, { fontFamily: 'Montserrat', fontVariant: 'small-caps', fontSize: ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }).width / 17.5) + ', 750, 750)'" v-bind:data-size="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:data-length="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:style="{ 'fill': '#fff' }">
-        <textPath alignment-baseline="middle" text-anchor="middles" xlink:href="#circlePath" style="font-family: 'Montserrat'; font-weight: bold; font-variant: small-caps; font-variant-caps:small-caps; font-size: 160px;" v-bind:style="{ 'font-size': ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }">
-          {{ title }}
-        </textPath>
-      </text>
-
-
-        </g>
 </svg>

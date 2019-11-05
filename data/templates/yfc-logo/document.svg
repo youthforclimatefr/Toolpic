@@ -115,23 +115,15 @@
    d="M305.727,263.93h16.14v5.19h-9.922v1.92h9.245v4.568h-9.245v2.055h10.057v5.189h-16.274V263.93z"
    id="path34" />
 </g>
-<g
-    id="additional">
-
-      <defs
-   id="defs991">
-        <path
-   id="circlePath"
-   d="m 130,750 a 620,620 0 0 0 1240,0"
-   style="fill:none;stroke:#ff0000;stroke-width:10px" />
-
-   </defs>
-
-   <text font-variant="small-caps" v-bind:transform="'rotate(' + (-125 + textInfo(title, { fontFamily: 'Montserrat', fontVariant: 'small-caps', fontSize: ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }).width / 17.5) + ', 750, 750)'" v-bind:data-size="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:data-length="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:style="{ 'fill': '#000' }">
+<g id="additional" v-dynamic data-dynamic-width="1100" data-dynamic-height="700" style="transform-origin: 50% 50%;">
+   <text style="font-size: 42px; alignment-baseline: middle; text-anchor: middle;" x="50%" y="50%">
+      My dynamic Text
+   </text>
+   <!--<text font-variant="small-caps" v-bind:transform="'rotate(' + (-125 + textInfo(title, { fontFamily: 'Montserrat', fontVariant: 'small-caps', fontSize: ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }).width / 17.5) + ', 750, 750)'" v-bind:data-size="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:data-length="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:style="{ 'fill': '#000' }">
       <textPath alignment-baseline="middle" text-anchor="middles" xlink:href="#circlePath" style="font-family: 'Montserrat'; font-weight: bold; font-variant: small-caps; font-variant-caps:small-caps; font-size: 160px;" v-bind:style="{ 'font-size': ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }">
          {{ title }}
       </textPath>
-   </text>
+   </text>-->
 </g>
 <rect
    fill="none"

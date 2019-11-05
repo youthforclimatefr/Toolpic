@@ -50,6 +50,10 @@
             "type": "value",
             "value": 1,
             "render": "data/resources/logo-2.svg"
+          },
+            {
+            "value": 2,
+            "render": "data/resources/logo.svg"
           }
         ]
       }

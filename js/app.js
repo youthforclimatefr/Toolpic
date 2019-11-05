@@ -30,7 +30,8 @@ const app = new Vue({
       'data/templates/pride/template.json',
       'data/templates/quote/template.json',
       'data/templates/sentence/template.json',
-      'data/templates/flyer2911/template.json'
+      'data/templates/flyer2911/template.json',
+      'data/templates/yfc-logo/template.json'
     ],
     __docIndex: 0,
     __activeTemplate: null,

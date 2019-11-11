@@ -42,7 +42,7 @@
     </style>
   </defs>
   <title>logo_national</title>
-  <g v-dynamic data-dynamic-origin="none" id="Texte" class="txt-right">
+  <g id="Texte" class="txt-right">
     <!--<text v-dynamic data-dynamic-origin="none" v-bind:arg="title" class="cls-1" transform="translate(212.86 299.1) " text-anchor="end">
       {{ title }}
     </text>-->

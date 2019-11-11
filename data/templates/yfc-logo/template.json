@@ -13,12 +13,12 @@
   "fonts": [
     {
       "name": "GothamBold",
-      "src": "fonts/Gotham/Gotham Medium.otf",
+      "src": "fonts/Gotham/gotham-medium.otf",
       "mime": "font/opentype"
     },
     {
       "name": "GothamUltra",
-      "src": "fonts/Gotham/Gotham Ultra.otf",
+      "src": "fonts/Gotham/gotham-ultra.otf",
       "mime": "font/opentype"
     }
   ],

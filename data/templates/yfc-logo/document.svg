@@ -41,11 +41,14 @@
         stroke-miterlimit: 10;
         stroke-width: 5px;
       }
+      .txt-right {
+         text-align: right;
+      }
     </style>
   </defs>
   <title>logo_national</title>
-  <g id="Texte">
-    <text class="cls-1" transform="translate(212.86 299.1) " text-anchor="end">
+  <g id="Texte" class="txt-right">
+    <text v-dynamic data-dynamic-origin="none" class="cls-1" transform="translate(212.86 299.1) " text-anchor="end">
       {{ title }}
     </text>
     <text class="cls-2" transform="translate(111.52 272.76)">

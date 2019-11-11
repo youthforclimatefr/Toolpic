@@ -1,6 +1,6 @@
 {
   "name": "YFC Logo",
-  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/yfc-logo/template.json",
+  "root": "https://gh.becauseofprog.fr/sites/toolpic2/data/templates/yfc-logo/template.json",
   "preview": "data/templates/yfc-logo/preview.svg",
   "documents": [
     {
@@ -13,12 +13,12 @@
   "fonts": [
     {
       "name": "GothamBold",
-      "src": "fonts/Gotham/gotham-medium.otf",
+      "src": "fonts/Gotham/Gotham Medium.otf",
       "mime": "font/opentype"
     },
     {
       "name": "GothamUltra",
-      "src": "fonts/Gotham/gotham-ultra.otf",
+      "src": "fonts/Gotham/Gotham Ultra.otf",
       "mime": "font/opentype"
     }
   ],

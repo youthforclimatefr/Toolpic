@@ -1,7 +1,7 @@
 {
-  "name": "S4F Logo",
+  "name": "YFC Logo",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/yfc-logo/template.json",
-  "preview": "data/templates/s4f-logo/preview.svg",
+  "preview": "data/templates/yfc-logo/preview.svg",
   "documents": [
     {
       "width": 1200,
@@ -12,8 +12,8 @@
   ],
   "fonts": [
     {
-      "name": "Montserrat",
-      "src": "fonts/Montserrat/Montserrat-Bold.otf",
+      "name": "Gotham",
+      "src": "fonts/Gotham/gotham-medium.otf",
       "mime": "font/opentype"
     }
   ],

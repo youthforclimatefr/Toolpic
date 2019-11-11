@@ -27,7 +27,7 @@
         font-family: GothamUltra;
       }
       .cls-3 {
-        font-size: 55px;
+        font-size: 57px;
         letter-spacing: -0.03em;
       }
       .cls-4 {
@@ -46,7 +46,7 @@
   </defs>
   <title>logo_national</title>
   <g id="Texte" class="main">
-    <text class="cls-1"  transform="translate(212.86 299.1) " v-bind:arg="title" text-anchor="end">
+    <text class="cls-1"  transform="translate(312.86 299.1) " v-bind:arg="title" text-anchor="end">
       {{ title }}
     </text>
     <text class="cls-2" transform="translate(111.52 272.76)">

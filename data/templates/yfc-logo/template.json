@@ -26,9 +26,9 @@
 
     {
       "type": "Line",
-      "description": "Title",
+      "description": "Ville du GL",
       "key": "title",
-      "default": "Osnabrück",
+      "default": "Vannes",
       "properties": {
 
       }

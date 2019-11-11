@@ -47,17 +47,15 @@
     </style>
   </defs>
   <title>logo_national</title>
-  <g id="Texte">
+  <g v-dynamic data-dynamic-origin="none" id="Texte" class="txt-right">
     <!--<text v-dynamic data-dynamic-origin="none" v-bind:arg="title" class="cls-1" transform="translate(212.86 299.1) " text-anchor="end">
       {{ title }}
     </text>-->
-    <g v-dynamic data-dynamic-width="1100" data-dynamic-height="700" style="transform-origin: 50% 50%;">
-      <!--any content here-->
-      <text class="cls-1 txt-right" transform="translate(212.86 299.1) " text-anchor="end">
-         {{ title }}
+    <text class="cls-1" transform="translate(212.86 299.1)" text-anchor="end" font-variant="small-caps" v-bind:transform="'rotate(' + (-125 + textInfo(title, { fontFamily: 'Montserrat', fontVariant: 'small-caps', fontSize: ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }).width / 17.5) + ', 750, 750)'" v-bind:data-size="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:data-length="textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width" v-bind:style="{ 'fill': '#fff' }">
+        <textPath alignment-baseline="middle" text-anchor="middles" xlink:href="#circlePath" style="font-family: 'Montserrat'; font-weight: bold; font-variant: small-caps; font-variant-caps:small-caps; font-size: 160px;" v-bind:style="{ 'font-size': ([ { max: 1500, value: 170 }, { max: 1700, value: 160 }, { max: 1870, value: 130 }, { max: 2050, value: 120 }, { max: 2385, value: 110 }, { max: 2650, value: 100 }, { max: 2840, value: 90 }, { max: Infinity, value: 80 } ].filter(record => textInfo(title, { fontFamily: 'Montserrat', fontSize: '160px' }).width <= record.max)[0].value) + 'px' }">
+          {{ title }}
+        </textPath>
       </text>
-      <!--any content here-->
-      </g>
     <text class="cls-2" transform="translate(111.52 272.76)">
       FOR CLIMATE
     </text>

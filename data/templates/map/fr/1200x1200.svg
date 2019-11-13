@@ -45,7 +45,7 @@
 
     <g filter="url(#dropshadow2)" v-dynamic data-dynamic-origin="none" data-dynamic-width="700" data-dynamic-height="400" style="transform-origin: 1150px 1150px;">
       <g>
-        <rect v-bind:x="1200 - 75 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50)" y="1000" height="75" v-bind:width="textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50" style="fill: #b1bb34;" />
+        <rect v-bind:x="1200 - 75 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50)" y="1000" height="75" v-bind:width="textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50" style="fill: #3AA16A;" />
         <text v-bind:x="1200 - 55 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50)" y="1060" style="font-size: 70px; font-family: 'Gotham-medium'; fill: #fff;">
           {{ location }}
         </text>

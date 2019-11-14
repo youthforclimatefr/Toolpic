@@ -200,7 +200,7 @@
 
     <g v-bind:style="{ transform: 'translate(' + ((getDigits(countdown).length * 550) / 2 - 275) + 'px, 0px)' }">
       <text>
-        <textPath alignment-baseline="hanging" text-anchor="start" v-bind:xlink:href="'#path' + getDigits(countdown)[0].digit" style="fill: #ccc; font-family: 'Gotham-bold'; font-size: 30px;">
+        <textPath alignment-baseline="hanging" text-anchor="start" v-bind:xlink:href="'#path' + getDigits(countdown)[0].digit" style="fill: #eee; font-family: 'Gotham-bold'; font-size: 30px;">
           {{ description }}
         </textPath>
       </text>
@@ -220,7 +220,7 @@
       </g>
 
       <g v-dynamic data-dynamic-width="800" data-dynamic-height="50" style="transform-origin: 50% 1175px;">
-        <text x="50%" y="1175" style="text-anchor: middle; alignment-baseline: middle; font-size: 40px; font-family: 'Gotham-medium'; fill: #fff;">
+        <text x="50%" y="1175" style="text-anchor: middle; alignment-baseline: middle; font-size: 35px; font-family: 'Gotham-medium'; fill: #fff;">
           {{ subtitle }}
         </text>
       </g>

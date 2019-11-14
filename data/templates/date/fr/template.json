@@ -1,35 +1,35 @@
 {
   "name": "Date 1",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date/template.json",
-  "preview": "data/templates/date/preview.jpg",
+  "preview": "data/templates/date/fr/preview.jpg",
   "documents": [
     {
       "width": 1200,
       "height": 1200,
-      "src": "data/templates/date/1200x1200.svg",
+      "src": "data/templates/date/fr/1200x1200.svg",
       "alias": "Facebook, Instagram"
     },
     {
       "width": 1200,
       "height": 675,
-      "src": "data/templates/date/1200x675.svg",
+      "src": "data/templates/date/fr/1200x675.svg",
       "alias": "Twitter"
     }
   ],
   "fonts": [
     {
-      "name": "Jost",
-      "src": "fonts/Jost/Jost-600-Semi.ttf",
-      "mime": "font/truetype"
+      "name": "Gotham-medium",
+      "src": "fonts/Gotham/Gotham-medium.otf",
+      "mime": "font/otf"
     }
   ],
   "fields": [
     {
       "type": "Selection",
-      "description": "Background",
+      "description": "Arrière-plan",
       "key": "backgroundImage",
       "default": {
-        "data": "data/templates/date/default.jpg"
+        "data": "data/templates/date/fr/default.jpg"
       },
       "properties": {
         "items": [
@@ -54,7 +54,7 @@
     },
     {
       "type": "Number",
-      "description": "Opacity",
+      "description": "Opacité",
       "key": "opacity",
       "default": 0.85,
       "properties": {
@@ -67,9 +67,9 @@
     },
     {
       "type": "Text",
-      "description": "Title",
+      "description": "Titre",
       "key": "title",
-      "default": ["ACT", "NOW!"],
+      "default": ["CLIMATE", "FRIDAY!"],
       "properties": {
 
       }
@@ -78,16 +78,16 @@
       "type": "Line",
       "description": "Date",
       "key": "date",
-      "default": "15. März",
+      "default": "29/11",
       "properties": {
 
       }
     },
     {
       "type": "Line",
-      "description": "Location & Time",
+      "description": "Lieu et heure",
       "key": "location",
-      "default": "10 Uhr | Mainz Hbf",
+      "default": "10h | Place Bellecour",
       "properties": {
 
       }
@@ -96,7 +96,7 @@
       "type": "Selection",
       "description": "Logo",
       "key": "logo",
-      "default": "data/resources/logo-2.svg",
+      "default": "data/resources/yfc_logo.svg",
       "properties": {
         "mime": "image/png",
         "width": 200,
@@ -109,6 +109,10 @@
           {
             "type": "value",
             "value": "data/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "data/resources/yfc_logo.svg"
           },
           {
             "type": "file"

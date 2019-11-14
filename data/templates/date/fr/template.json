@@ -56,9 +56,9 @@
       "type": "Number",
       "description": "Opacité",
       "key": "opacity",
-      "default": 0.85,
+      "default": 0.75,
       "properties": {
-        "value": 0.85,
+        "value": 0.75,
         "max": 1,
         "min": 0,
         "kind": "slider",

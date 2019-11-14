@@ -36,7 +36,7 @@
 
     <image v-bind:xlink:href="'https://api.mapbox.com/styles/v1/maurice-conrad/cjx99d5vc2gyb1dmmu184s2u0/static/geojson(' + encodeURIComponent(JSON.stringify(route.geo)) + ')/' + route.center.lng + ',' + route.center.lat + ',' + route.zoom + '/' + route.width + 'x' + route.height + '@2x?access_token=' + route.accessToken" v-fitimage v-bind:data-image-pos="0" style="transform-origin: 50% 50%;" />
 
-    <path style="fill: #457b2f;" d="M0,0 l 1200,0 0,150 -1200,100" filter="url(#dropshadow2)"/>
+    <path style="fill: #b1bb34;" d="M0,0 l 1200,0 0,150 -1200,100" filter="url(#dropshadow2)"/>
     <g v-dynamic data-dynamic-origin="none" data-dynamic-width="1050" data-dynamic-height="180" style="transform-origin: 50px 30px;">
       <text style="font-size: 120px; font-family: 'Gotham-bold'; fill: #fff; alignment-baseline: hanging;" x="50" y="30">
         {{ date }}
@@ -45,14 +45,14 @@
 
     <g filter="url(#dropshadow2)" v-dynamic data-dynamic-origin="none" data-dynamic-width="700" data-dynamic-height="400" style="transform-origin: 1150px 1150px;">
       <g>
-        <rect v-bind:x="1200 - 75 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50)" y="1000" height="75" v-bind:width="textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50" style="fill: #3AA16A;" />
+        <rect v-bind:x="1200 - 75 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50)" y="1000" height="75" v-bind:width="textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50" style="fill: #457b2f;" />
         <text v-bind:x="1200 - 55 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50)" y="1060" style="font-size: 70px; font-family: 'Gotham-medium'; fill: #fff;">
           {{ location }}
         </text>
       </g>
       <g>
         <rect v-bind:x="1200 - 75 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50) - ((textInfo(locationdetail, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50) / 3)" y="1075" height="75" v-bind:width="textInfo(locationdetail, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50" style="fill: #fff;" />
-        <text v-bind:x="1200 - 55 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50) - ((textInfo(locationdetail, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50) / 3)" y="1135" style="font-size: 70px; font-family: 'Gotham-medium'; fill: #34B06F;">
+        <text v-bind:x="1200 - 55 - (textInfo(location, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50) - ((textInfo(locationdetail, { fontFamily: 'Gotham-medium', fontSize: '70px'}).width + 50) / 3)" y="1135" style="font-size: 70px; font-family: 'Gotham-medium'; fill: #457b2f;">
           {{ locationdetail }}
         </text>
       </g>

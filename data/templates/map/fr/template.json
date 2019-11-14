@@ -23,12 +23,12 @@
       "mime": "font/truetype"
     },
     {
-      "name": "Gotham-ultra",
+      "name": "Gotham-700",
       "src": "fonts/Gotham/gotham-ultra.otf",
       "mime": "font/otf"
     },
     {
-      "name": "Gotham-medium",
+      "name": "Gotham",
       "src": "fonts/Gotham/gotham-medium.otf",
       "mime": "font/otf"
     }

@@ -19,8 +19,8 @@
   "fonts": [
     {
       "name": "Gotham-bold",
-      "src": "fonts/Gotham/gotham-ultra.ttf",
-      "mime": "font/truetype"
+      "src": "fonts/Gotham/gotham-ultra.otf",
+      "mime": "font/otf"
     },
     {
       "name": "Gotham-medium",

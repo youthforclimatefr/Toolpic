@@ -19,13 +19,13 @@
   "fonts": [
     {
       "name": "Gotham-bold",
-      "src": "fonts/Gotham/gotham-bold.ttf",
+      "src": "fonts/Gotham/gotham-ultra.ttf",
       "mime": "font/truetype"
     },
     {
-      "name": "Gotham",
-      "src": "fonts/Gotham/gotham-medium.otf",
-      "mime": "font/otf"
+      "name": "Gotham-medium",
+      "src": "fonts/Gotham/gotham-bold.ttf",
+      "mime": "font/truetype"
     }
   ],
   "fields": [

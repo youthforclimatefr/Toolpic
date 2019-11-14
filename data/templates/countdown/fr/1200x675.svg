@@ -76,7 +76,7 @@
           </g>
 
           <g v-if="digit.digit == 2">
-            <path d="M 745,327 l 12000,8000 0,500 -12410,-7932 L 338,895 617,667 363,520 l 100,-100" style="fill: #188F3F;"/>
+            <path d="M 745,327 l 12000,8000 0,500 -12410,-7932 L 338,895 617,667 363,520 l 100,-100" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-2)" />
 
             <g v-bind:clip-path="'url(#mask-digit-2)'">
@@ -90,7 +90,7 @@
 
 
           <g v-if="digit.digit == 3">
-            <path d="M 748,323 l 12000,8000 L 12476,8878 473,878 517,707 717,840 719,735 565,635 622,621 398,474" style="fill: #188F3F;"/>
+            <path d="M 748,323 l 12000,8000 L 12476,8878 473,878 517,707 717,840 719,735 565,635 622,621 398,474" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-3)" />
 
             <g v-bind:clip-path="'url(#mask-digit-3)'">
@@ -103,7 +103,7 @@
           </g>
 
           <g v-if="digit.digit == 4">
-            <path d="M 766,299 l 12000,8000 L 12315,8790 313,790" style="fill: #188F3F;"/>
+            <path d="M 766,299 l 12000,8000 L 12315,8790 313,790" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-4)" />
 
             <g v-bind:clip-path="'url(#mask-digit-4)'">
@@ -117,7 +117,7 @@
 
 
           <g v-if="digit.digit == 5">
-            <path d="M 827,300 l 12000,8000 L 12361,8829 358,829 701,842 398,644 l 100,-300" style="fill: #188F3F;"/>
+            <path d="M 827,300 l 12000,8000 L 12361,8829 358,829 701,842 398,644 l 100,-300" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-5)" />
 
             <g v-bind:clip-path="'url(#mask-digit-5)'">
@@ -130,7 +130,7 @@
           </g>
 
           <g v-if="digit.digit == 6">
-            <path d="M 780,303 l 12000,8000 L 12454,8872 452,874 l -50,-300" style="fill: #188F3F;"/>
+            <path d="M 780,303 l 12000,8000 L 12454,8872 452,874 l -50,-300" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-6)" />
 
             <g v-bind:clip-path="'url(#mask-digit-6)'">
@@ -143,7 +143,7 @@
           </g>
 
           <g v-if="digit.digit == 7">
-            <path d="M 854,300 l 12000,8000 L 12411,8895 409,897 668,634 366,436" style="fill: #188F3F;"/>
+            <path d="M 854,300 l 12000,8000 L 12411,8895 409,897 668,634 366,436" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-7)" />
 
             <g v-bind:clip-path="'url(#mask-digit-7)'">
@@ -156,7 +156,7 @@
           </g>
 
           <g v-if="digit.digit == 8">
-            <path d="M 731,320 l 12000,8000 L 12461,8873 461,873 l 50,-300 -50,-200" style="fill: #188F3F;"/>
+            <path d="M 731,320 l 12000,8000 L 12461,8873 461,873 l 50,-300 -50,-200" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-8)" />
 
             <g v-bind:clip-path="'url(#mask-digit-8)'">
@@ -169,7 +169,7 @@
           </g>
 
           <g v-if="digit.digit == 9">
-            <path d="M 760,334 l 12000,8000 L 12420,8893 418,895 582,766 430,668 l 50,-300" style="fill: #188F3F;"/>
+            <path d="M 760,334 l 12000,8000 L 12420,8893 418,895 582,766 430,668 l 50,-300" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-9)" />
 
             <g v-bind:clip-path="'url(#mask-digit-9)'">
@@ -182,7 +182,7 @@
           </g>
 
           <g v-if="digit.digit == 0">
-            <path d="M 726,322 l 12000,8000 L 12476,8874 474,876 l -50,-400" style="fill: #188F3F;"/>
+            <path d="M 726,322 l 12000,8000 L 12476,8874 474,876 l -50,-400" style="fill: #b1bb34;"/>
             <rect x="0" y="0" width="1200" height="1200" style="fill: #fff;" clip-path="url(#mask-digit-0)" />
 
             <g v-bind:clip-path="'url(#mask-digit-0)'">

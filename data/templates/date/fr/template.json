@@ -19,7 +19,7 @@
   "fonts": [
     {
       "name": "Gotham-medium",
-      "src": "fonts/Gotham/Gotham-medium.otf",
+      "src": "fonts/Gotham/gotham-medium.otf",
       "mime": "font/otf"
     }
   ],

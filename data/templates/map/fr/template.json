@@ -1,7 +1,7 @@
 {
-  "name": "Map",
+  "name": "Carte de manif",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/map/template.json",
-  "preview": "data/templates/map/fr/preview.jpg",
+  "preview": "data/templates/map/fr/preview.png",
   "documents": [
     {
       "width": 1200,

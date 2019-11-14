@@ -19,7 +19,7 @@
 
         <rect v-bind:x="(1200 - (textInfo(line.toUpperCase(), { fontFamily: 'Gotham-ultra', fontSize: '200px' }).width + 60)) / 2" v-bind:y="17.5 + 260 * (title.indexOf(line) + 0)" v-bind:height="textInfo(line.toUpperCase(), { fontFamily: 'Gotham-ultra', fontSize: '200px' }).height" fill="#b1bb34" v-bind:width="textInfo(line.toUpperCase(), { fontFamily: 'Gotham-ultra', fontSize: '200px'}).width + 60"/>
 
-        <text alignment-baseline="middle" text-anchor="middle" x="600" fill="#fff" v-bind:y="35 + 130 + 260 * (title.indexOf(line) + 0)"  style="transform-origin: 50% 17.5px; transform: scale(1); font-size: 200px; font-family: 'Gotham-ultra', 'Helvetica Neue';" v-bind:style="{ 'font-size': '200px' }">
+        <text alignment-baseline="middle" text-anchor="middle" x="600" fill="#fff" v-bind:y="35 + 130 + 260 * (title.indexOf(line) + 0) - 10"  style="transform-origin: 50% 17.5px; transform: scale(1); font-size: 200px; font-family: 'Gotham-ultra', 'Helvetica Neue';" v-bind:style="{ 'font-size': '200px' }">
           {{ line }}
         </text>
 

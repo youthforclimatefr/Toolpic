@@ -21,6 +21,11 @@
       "name": "Gotham-medium",
       "src": "fonts/Gotham/gotham-medium.otf",
       "mime": "font/otf"
+    },
+    {
+      "name": "Gotham-ultra",
+      "src": "fonts/Gotham/gotham-ultra.otf",
+      "mime": "font/otf"
     }
   ],
   "fields": [

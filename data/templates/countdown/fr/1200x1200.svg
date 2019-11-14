@@ -24,35 +24,35 @@
 
     <defs>
       <clipPath id="mask-digit-1">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">1</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">1</text>
         <!--<path d="M440.475,471.7l147.9,-35.7l0,459l137.7,0l0,-606.05l-285.6,57.8l0,124.95Z" style="fill: #fff;"/>-->
       </clipPath>
       <clipPath id="mask-digit-2">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">2</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">2</text>
       </clipPath>
       <clipPath id="mask-digit-3">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">3</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">3</text>
       </clipPath>
       <clipPath id="mask-digit-4">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">4</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">4</text>
       </clipPath>
       <clipPath id="mask-digit-5">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">5</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">5</text>
       </clipPath>
       <clipPath id="mask-digit-6">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">6</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">6</text>
       </clipPath>
       <clipPath id="mask-digit-7">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">7</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">7</text>
       </clipPath>
       <clipPath id="mask-digit-8">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">8</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">8</text>
       </clipPath>
       <clipPath id="mask-digit-9">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">9</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">9</text>
       </clipPath>
       <clipPath id="mask-digit-0">
-        <text x="600" y="700" style="font-family: 'Gotham-ultra'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">0</text>
+        <text x="600" y="700" style="font-family: 'Jost-700'; font-size: 850; fill: #fff; alignment-baseline: middle; text-anchor: middle;">0</text>
       </clipPath>
 
     </defs>
@@ -207,11 +207,11 @@
     </g>
 
     <g style="tranform-origin: 1200px 90px; transform: rotate(3deg) translate(50px, 0);">
-      <multiline-text v-dynamic data-dynamic-origin="100% 90px" data-dynamic-width="700" data-dynamic-height="125" x="-15" y="25" align="right" padding="25 55" v-bind:text="[info2]" lineheight="1.2" background="#fff" css="font-size: 80px; font-family: 'Gotham-bold'; fill: #90D3ED;"></multiline-text>
+      <multiline-text v-dynamic data-dynamic-origin="100% 90px" data-dynamic-width="700" data-dynamic-height="125" x="-15" y="25" align="right" padding="25 55" v-bind:text="[info2]" lineheight="1.2" background="#fff" css="font-size: 80px; font-family: 'Gotham-bold'; fill: #457b2f;"></multiline-text>
     </g>
 
     <g style="tranform-origin: 0px 90px; transform: rotate(-6deg);">
-      <multiline-text v-dynamic data-dynamic-origin="0% 90px" data-dynamic-width="700" data-dynamic-height="125" x="-55" y="150" align="left" padding="25 55" v-bind:text="[info1]" lineheight="1.2" background="#fff" css="font-size: 80px; font-family: 'Gotham-bold'; fill: #90D3ED;"></multiline-text>
+      <multiline-text v-dynamic data-dynamic-origin="0% 90px" data-dynamic-width="700" data-dynamic-height="125" x="-55" y="150" align="left" padding="25 55" v-bind:text="[info1]" lineheight="1.2" background="#fff" css="font-size: 80px; font-family: 'Gotham-bold'; fill: #457b2f;"></multiline-text>
     </g>
 
     <g>

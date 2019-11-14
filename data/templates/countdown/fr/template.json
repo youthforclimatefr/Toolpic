@@ -31,6 +31,11 @@
       "name": "Gotham-bold",
       "src": "fonts/Gotham/gotham-bold.ttf",
       "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-700",
+      "src": "fonts/Jost/Jost-700-Bold.ttf",
+      "mime": "font/truetype"
     }
   ],
   "fields": [

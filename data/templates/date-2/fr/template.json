@@ -1,0 +1,161 @@
+{
+  "name": "Date 2 - FR",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date-2/template.json",
+  "preview": "data/templates/date-2/fr/preview.png",
+  "type": "png",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "data/templates/date-2/fr/1200x1200.svg",
+      "alias": "Facebook, Instagram"
+    },
+    {
+      "width": 1200,
+      "height": 675,
+      "src": "data/templates/date-2/fr/1200x675.svg",
+      "alias": "Twitter"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Gotham-bold",
+      "src": "fonts/Gotham/gotham-ultra.otf",
+      "mime": "font/otf"
+    },
+    {
+      "name": "Gotham-medium",
+      "src": "fonts/Gotham/gotham-bold.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Gotham-ultra",
+      "src": "fonts/Gotham/gotham-ultra.otf",
+      "mime": "font/otf"
+    }
+  ],
+  "fields": [
+    {
+      "type": "Selection",
+      "description": "Arrière plan",
+      "key": "backgroundImage",
+      "default": {
+        "data": "data/templates/date-2/fr/bg.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Number",
+      "description": "Position",
+      "key": "pos",
+      "default": 0,
+      "properties": {
+        "value": 0,
+        "max": 1,
+        "min": -1,
+        "step": 0.05,
+        "kind": "slider"
+      }
+    },
+    {
+      "type": "Checklist",
+      "description": "Options",
+      "key": "options",
+      "default": [true, false],
+      "properties": {
+        "fields": [
+          "Place & Date",
+          "Assombrir l'image"
+        ]
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Date",
+      "key": "date",
+      "default": "29 Novembre",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Heure",
+      "key": "time",
+      "default": "10 heures",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Lieu de rdv",
+      "key": "location",
+      "default": "Place Bellecour",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Ville",
+      "key": "locationdetail",
+      "default": "Lyon",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Sous-titre",
+      "key": "subtitle",
+      "default": "Ce vendredi, rejoignez le",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Text",
+      "description": "Titre",
+      "key": "title",
+      "default": ["GREEN FRIDAY"],
+      "properties": {
+
+      }
+    },
+    {
+      "type": "Selection",
+      "description": "Logo",
+      "key": "logo",
+      "default": "data/resources/yfc_logo.svg",
+      "properties": {
+        "mime": "image/png",
+        "width": 200,
+        "height": 200,
+        "items": [
+          {
+            "type": "value",
+            "value": "data/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "data/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "data/resources/yfc_logo.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

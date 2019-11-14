@@ -15,7 +15,8 @@ const app = new Vue({
     menuOpen: true,
     templateUrls: [
       //'data/templates/support/template.json',
-      'data/templates/date-2/template.json',
+      'data/templates/date-2/de/template.json',
+      'data/templates/date-2/fr/template.json',
       'data/templates/map/fr/template.json',
       'data/templates/map/de/template.json',
       'data/templates/date/template.json',

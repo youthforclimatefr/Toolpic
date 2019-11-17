@@ -54,11 +54,13 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
-   <g clip-path="url(#circle-inner)">
-      <g style="transform-origin: 50% 50%; transform: scale(0.71);">
-        <image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="0" style="transform-origin: 50% 50%;" />
+   <g class="main">
+      <g clip-path="url(#circle-inner)">
+         <g style="transform-origin: 50% 50%; transform: scale(0.71);">
+            <image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="0" style="transform-origin: 50% 50%;" />
+         </g>
       </g>
-    </g>
+   </g>
   <image
      width="1600"
      height="1600"

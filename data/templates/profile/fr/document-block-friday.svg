@@ -57,7 +57,7 @@
 
   <g class="main">
       <g clip-path="url(#circle-inner)">
-         <g style="transform-origin: 50% 50%; transform: scale(0.71);">
+         <g style="transform-origin: 50% 50%; transform: scale(0.71); border-radius: 5%;">
             <image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="0" style="transform-origin: 50% 50%; border-radius: 5%;" />
          </g>
       </g>

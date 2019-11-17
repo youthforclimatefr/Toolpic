@@ -1,19 +1,20 @@
 {
   "name": "Photo de profil",
-  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/profile/fr/template.json",
+  "root": "https://gh.becauseofprog.fr/sites/toolpic2/data/templates/profile/fr/template.json",
   "preview": "data/templates/profile/fr/preview.png",
   "documents": [
     {
-      "width": 1200,
-      "height": 1200,
+      "width": 1600,
+      "height": 1600,
       "src": "data/templates/profile/fr/profilepic_generator_v4.svg",
       "alias": "1:1"
     }
   ],
+  "fonts": [],
   "fields": [
     {
       "type": "Selection",
-      "description": "Arrière plan",
+      "description": "Background",
       "key": "pic",
       "default": {
         "data": "data/templates/profile/fr/bg.jpg"

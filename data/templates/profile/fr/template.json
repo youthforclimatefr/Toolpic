@@ -1,12 +1,12 @@
 {
   "name": "Photo de profil",
-  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/profile/template.json",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/profile/fr/template.json",
   "preview": "data/templates/profile/fr/preview.png",
   "documents": [
     {
       "width": 1200,
       "height": 1200,
-      "src": "data/templates/profile/fr/profile_generator.png",
+      "src": "data/templates/profile/fr/profilepic_generator_v3.png",
       "alias": "1:1"
     }
   ],

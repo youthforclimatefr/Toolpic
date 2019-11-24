@@ -6,6 +6,7 @@
 
   <g class="main">
     <image v-bind:xlink:href="typeof backgroundImage == 'object' ? backgroundImage.data : backgroundImage" v-fitimage v-bind:data-image-pos="pos" style="transform-origin: 50% 50%;" />
+    <image v-bind:xlink:href="typeof logo == 'object' ? logo.data : logo" x="1005" y="480" height="180" width="180" />
   </g>
 
 </svg>

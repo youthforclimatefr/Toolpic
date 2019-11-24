@@ -1,32 +1,30 @@
 {
-  "name": "Date 2 - FR",
-  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date-2/template.json",
-  "preview": "data/templates/date-2/fr/preview.png",
+  "name": "Flocage",
+  "root": "https://gh.becauseofprog.fr/sites/toolpic2/templates/flocage/template.json",
+  "preview": "data/templates/flocage/preview.png",
   "type": "png",
   "documents": [
     {
       "width": 1200,
       "height": 1200,
-      "src": "data/templates/date-2/fr/1200x1200.svg",
+      "src": "data/templates/flocage/1200x1200.svg",
       "alias": "Facebook, Instagram"
     },
     {
       "width": 1200,
       "height": 675,
-      "src": "data/templates/date-2/fr/1200x675.svg",
+      "src": "data/templates/flocage/1200x675.svg",
       "alias": "Twitter"
     }
   ],
-  "fonts": [
-
-  ],
+  "fonts": [],
   "fields": [
     {
       "type": "Selection",
       "description": "Arrière plan",
       "key": "backgroundImage",
       "default": {
-        "data": "data/templates/date-2/fr/bg.jpg"
+        "data": "data/templates/flocage/bg.jpg"
       },
       "properties": {
         "items": [

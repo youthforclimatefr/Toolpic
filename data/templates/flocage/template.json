@@ -1,0 +1,68 @@
+{
+  "name": "Date 2 - FR",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date-2/template.json",
+  "preview": "data/templates/date-2/fr/preview.png",
+  "type": "png",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "data/templates/date-2/fr/1200x1200.svg",
+      "alias": "Facebook, Instagram"
+    },
+    {
+      "width": 1200,
+      "height": 675,
+      "src": "data/templates/date-2/fr/1200x675.svg",
+      "alias": "Twitter"
+    }
+  ],
+  "fonts": [
+
+  ],
+  "fields": [
+    {
+      "type": "Selection",
+      "description": "Arrière plan",
+      "key": "backgroundImage",
+      "default": {
+        "data": "data/templates/date-2/fr/bg.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Selection",
+      "description": "Logo",
+      "key": "logo",
+      "default": "data/resources/yfc_logo.svg",
+      "properties": {
+        "mime": "image/png",
+        "width": 200,
+        "height": 200,
+        "items": [
+          {
+            "type": "value",
+            "value": "data/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "data/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "data/resources/yfc_logo.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

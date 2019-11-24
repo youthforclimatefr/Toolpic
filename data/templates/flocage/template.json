@@ -95,6 +95,19 @@
           "Bas"
         ]
       }
+    },
+    {
+      "type": "Number",
+      "description": "Position",
+      "key": "pos",
+      "default": 0,
+      "properties": {
+        "value": 0,
+        "max": 1,
+        "min": -1,
+        "step": 0.05,
+        "kind": "slider"
+      }
     }
   ]
 }

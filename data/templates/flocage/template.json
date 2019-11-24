@@ -82,11 +82,11 @@
       "type": "Checklist",
       "description": "Paramètres",
       "key": "settings",
-      "default": [true, false],
+      "default": [false, false],
       "properties": {
         "fields": [
-          "Gauche",
-          "Droite"
+          "Droite",
+          "Bas"
         ]
       }
     }

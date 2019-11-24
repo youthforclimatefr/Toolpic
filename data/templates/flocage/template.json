@@ -82,7 +82,7 @@
       "type": "Checklist",
       "description": "Position",
       "key": "effects",
-      "default": [true],
+      "default": [true, false],
       "properties": {
         "fields": [
           "Gauche",

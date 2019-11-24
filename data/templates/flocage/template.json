@@ -54,11 +54,39 @@
           },
           {
             "type": "value",
+            "value": "data/resources/logo-new-spinner.svg"
+          },
+          {
+            "type": "value",
+            "value": "data/resources/logo-spinner.svg"
+          },
+          {
+            "type": "value",
             "value": "data/resources/yfc_logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "data/resources/yfc_logo_color_transparent.png"
+          },
+          {
+            "type": "value",
+            "value": "data/resources/yfc_logo_white_transparent.png"
           },
           {
             "type": "file"
           }
+        ]
+      }
+    },
+    {
+      "type": "Checklist",
+      "description": "Position",
+      "key": "effects",
+      "default": [true],
+      "properties": {
+        "fields": [
+          "Gauche",
+          "Droite"
         ]
       }
     }

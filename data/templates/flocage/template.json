@@ -7,14 +7,20 @@
     {
       "width": 1200,
       "height": 1200,
-      "src": "data/templates/flocage/topleft-square.svg",
-      "alias": "Facebook, Instagram"
+      "src": "data/templates/flocage/format-carre.svg",
+      "alias": "Carré : Facebook, Instagram"
     },
     {
       "width": 1200,
       "height": 675,
-      "src": "data/templates/flocage/topleft-notsquare.svg",
-      "alias": "Twitter"
+      "src": "data/templates/flocage/format-rectangle.svg",
+      "alias": "Rectangulaire : Twitter"
+    },
+    {
+      "width": 1080,
+      "height": 1920,
+      "src": "data/templates/flocage/format-story.svg",
+      "alias": "Smartphone : Story"
     }
   ],
   "fonts": [],

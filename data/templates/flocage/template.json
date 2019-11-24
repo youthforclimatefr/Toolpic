@@ -80,8 +80,8 @@
     },
     {
       "type": "Checklist",
-      "description": "Position",
-      "key": "effects",
+      "description": "Paramètres",
+      "key": "settings",
       "default": [true, false],
       "properties": {
         "fields": [

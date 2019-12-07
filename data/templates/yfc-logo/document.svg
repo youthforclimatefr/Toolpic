@@ -14,6 +14,8 @@
         letter-spacing: 0.01em;
         text-align:right;
         text-transform: uppercase;
+        font-variant: small-caps;
+        font-variant-caps: small-caps; 
       }
       .cls-2 {
         font-size: 29.12px;
@@ -47,7 +49,7 @@
   </defs>
   <title>logo_national</title>
   <g id="Texte" class="main">
-    <text class="cls-1"  transform="translate(312.86 299.1) " v-bind:arg="title" text-anchor="end">
+    <text font-variant="small-caps" class="cls-1"  transform="translate(312.86 299.1) " v-bind:arg="title" text-anchor="end">
       {{ title.toUpperCase() }}
     </text>
     <text class="cls-2" transform="translate(111.52 272.76)">

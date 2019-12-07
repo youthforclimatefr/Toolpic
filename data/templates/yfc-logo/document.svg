@@ -47,7 +47,7 @@
   <title>logo_national</title>
   <g id="Texte" class="main">
     <text class="cls-1"  transform="translate(312.86 299.1) " v-bind:arg="title" text-anchor="end">
-      {{ title }}
+      {{ title.toUpperCase() }}
     </text>
     <text class="cls-2" transform="translate(111.52 272.76)">
       FOR CLIMATE

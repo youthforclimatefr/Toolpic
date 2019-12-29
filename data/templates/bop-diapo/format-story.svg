@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+
+     viewBox="0 0 1080 1920"
+     version="1.1">
+
+  <g class="main">
+    <image v-bind:xlink:href="typeof backgroundImage == 'object' ? backgroundImage.data : backgroundImage" v-fitimage v-bind:data-image-pos="pos" style="transform-origin: 50% 50%;" />
+    <image v-bind:xlink:href="typeof logo == 'object' ? logo.data : logo" x="390" y="500" height="300" width="300" />
+  </g>
+
+</svg>

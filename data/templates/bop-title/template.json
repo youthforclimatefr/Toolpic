@@ -1,0 +1,77 @@
+{
+  "name": "BOP - Titre",
+  "root": "https://gh.becauseofprog.fr/sites/toolpic2/templates/bop-title/template.json",
+  "preview": "data/templates/bop-title/preview.png",
+  "type": "png",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "data/templates/bop-title/format-carre.svg",
+      "alias": "Carré : Facebook, Instagram"
+    },
+    {
+      "width": 1200,
+      "height": 675,
+      "src": "data/templates/bop-title/format-rectangle.svg",
+      "alias": "Rectangulaire : Twitter"
+    },
+    {
+      "width": 1080,
+      "height": 1920,
+      "src": "data/templates/bop-title/format-story.svg",
+      "alias": "Smartphone : Story"
+    }
+  ],
+  "fonts": [],
+  "fields": [
+    {
+      "type": "Selection",
+      "description": "Arrière plan",
+      "key": "backgroundImage",
+      "default": {
+        "data": "data/templates/flocage/bg.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Selection",
+      "description": "Logo",
+      "key": "logo",
+      "default": "data/templates/bop-title/bop-logo.svg",
+      "properties": {
+        "mime": "image/png",
+        "width": 200,
+        "height": 200,
+        "items": [
+          {
+            "type": "value",
+            "value": "data/templates/bop-title/bop-logo.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Number",
+      "description": "Position",
+      "key": "pos",
+      "default": 0,
+      "properties": {
+        "value": 0,
+        "max": 1,
+        "min": -1,
+        "step": 0.05,
+        "kind": "slider"
+      }
+    }
+  ]
+}

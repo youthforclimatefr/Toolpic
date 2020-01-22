@@ -1,0 +1,23 @@
+{
+  "name": "Logo",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/13mars/template.json",
+  "preview": "data/templates/13mars/preview.jpg",
+  "documents": [
+    {
+      "width": 1890,
+      "height": 994,
+      "src": "data/templates/13mars/pochoir.svg",
+      "alias": "Horizontal"
+    }
+  ],
+  "fonts": [],
+  "fields": [
+    {
+      "type": "Line",
+      "description": "Ville",
+      "key": "title",
+      "default": "Paris",
+      "properties": {}
+    }
+  ]
+}

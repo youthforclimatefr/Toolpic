@@ -37,8 +37,6 @@ const app = new Vue({
       'data/templates/yfc-logo/template.json',
       'data/templates/flocage/template.json',
       'data/templates/profile/fr/template.json',
-      'data/templates/bop-title/template.json',
-      'data/templates/bop-diapo/template.json',
       'data/templates/13mars/template.json'
 
     ],

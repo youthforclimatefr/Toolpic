@@ -23,7 +23,7 @@
       "description": "Background",
       "key": "pic",
       "default": {
-        "data": "https://gh.becauseofprog.fr/sites/toolpic2/data/templates/profile/fr/bg.jpg"
+        "data": "data/templates/profile/fr/bg.jpg"
       },
       "properties": {
         "items": [

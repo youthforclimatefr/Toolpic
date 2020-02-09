@@ -46,7 +46,7 @@
 <defs
    id="defs2">
 </defs>
-<g>
+<g class="main">
    <g clip-path="url(#circle-inner)">
       <g style="transform-origin: 50% 50%; transform: scale(0.75);">
          <image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="0" />

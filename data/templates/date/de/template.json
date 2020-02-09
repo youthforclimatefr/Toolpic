@@ -1,7 +1,7 @@
 {
   "name": "Date 1",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date/template.json",
-  "preview": "data/templates/date/preview.jpg",
+  "preview": "data/templates/date/de/preview.jpg",
   "type": "jpg",
   "documents": [
     {

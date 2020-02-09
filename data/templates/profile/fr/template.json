@@ -6,18 +6,24 @@
     {
       "width": 595,
       "height": 595,
-      "src": "data/templates/profile/fr/document-13mars.svg",
+      "src": "https://gh.becauseofprog.fr/sites/yfc-toolpic/data/templates/profile/fr/document-13mars-2.svg",
       "alias": "1:1"
     }
   ],
-  "fonts": [],
+  "fonts": [
+    {
+      "name": "Gotham-Bold",
+      "src": "fonts/Gotham/gotham-medium.otf",
+      "mime": "font/opentype"
+    }
+  ],
   "fields": [
     {
       "type": "Selection",
       "description": "Background",
       "key": "pic",
       "default": {
-        "data": "data/templates/profile/fr/bg.jpg"
+        "data": "https://gh.becauseofprog.fr/sites/toolpic2/data/templates/profile/fr/bg.jpg"
       },
       "properties": {
         "items": [

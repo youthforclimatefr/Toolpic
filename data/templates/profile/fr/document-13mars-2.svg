@@ -46,7 +46,7 @@
 <defs
    id="defs2">
    <clipPath id="circle-inner">
-      <circle cx="900" cy="900" r="635" />
+      <circle cx="300" cy="300" r="595" />
    </clipPath>
 </defs>
 <g class="main">

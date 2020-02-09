@@ -15,6 +15,7 @@ const app = new Vue({
       'data/templates/13mars/template.json',
       'data/templates/yfc-logo/template.json',
       'data/templates/profile/fr/template.json',
+      'data/templates/profile/france13mars/template.json',
       'data/templates/date-2/fr/template.json',
       'data/templates/date-2/de/template.json',
       'data/templates/map/fr/template.json',

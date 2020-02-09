@@ -1,0 +1,51 @@
+{
+  "name": "Photo de profil",
+  "root": "https://gh.becauseofprog.fr/sites/toolpic2/data/templates/profile/fr/template.json",
+  "preview": "data/templates/profile/fr/preview.png",
+  "documents": [
+    {
+      "width": 595,
+      "height": 595,
+      "src": "data/templates/profile/fr/document.svg",
+      "alias": "1:1"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Gotham-Bold",
+      "src": "fonts/Gotham/gotham-medium.otf",
+      "mime": "font/opentype"
+    }
+  ],
+  "fields": [
+    {
+      "type": "Selection",
+      "description": "Background",
+      "key": "pic",
+      "default": {
+        "data": "data/templates/profile/fr/bg.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Titre ligne 1",
+      "key": "title",
+      "default": "OSEZ",
+      "properties": {}
+    },
+    {
+      "type": "Line",
+      "description": "Titre ligne 2",
+      "key": "subtitle",
+      "default": "(G)RêVER",
+      "properties": {}
+    }
+  ]
+}

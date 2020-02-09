@@ -18,6 +18,8 @@ const components = (function() {
 })();
 
 
+
+
 export default class Renderer extends EventEmitter {
   constructor(template, docIndex = 0) {
     super();
@@ -100,14 +102,11 @@ export default class Renderer extends EventEmitter {
 
     const ctx = this.context;
 
-    console.log(!!ctx);
-
     // Get group with class name 'main' as main vue element in which the vue magic will happen
     const vueMainGroup = ctx.getElementsByClassName("main")[0];
 
     const defsContainer = document.createElementNS("http://www.w3.org/2000/svg", "defs");
 
-    console.log(!!this.context);
 
     if (this.context) {
       this.context.insertBefore(defsContainer, vueMainGroup);
@@ -117,7 +116,6 @@ export default class Renderer extends EventEmitter {
       defsContainer.append(fontSheet);
       this.Vue.$forceUpdate();
     });
-
 
     // Initalize Vue.js Instance with
     this.Vue = new Vue({

@@ -1,18 +1,19 @@
 {
   "name": "Countdown",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/countdown/template.json",
-  "preview": "data/templates/countdown/de/preview.jpg",
+  "preview": "data/templates/countdown/preview.jpg",
+  "type": "jpg",
   "documents": [
     {
       "width": 1200,
       "height": 1200,
-      "src": "data/templates/countdown/de/1200x1200.svg",
+      "src": "data/templates/countdown/1200x1200.svg",
       "alias": "Facebook, Instagram"
     },
     {
       "width": 1200,
       "height": 675,
-      "src": "data/templates/countdown/de/1200x675.svg",
+      "src": "data/templates/countdown/1200x675.svg",
       "alias": "Twitter"
     }
   ],

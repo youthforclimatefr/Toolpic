@@ -2,8 +2,6 @@ import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.esm.browser.js
 import AsyncComputed from './vue-async-computed.esm.js'
 import * as Toolpic from "../dist/main.js"
 
-console.log(Toolpic);
-
 import { responseToDataUrl, iOS, openTab } from './helper.js'
 import download from './download.js'
 
@@ -14,15 +12,17 @@ const app = new Vue({
   data: {
     menuOpen: true,
     templateUrls: [
-      //'data/templates/support/template.json',
-      'data/templates/date-2/de/template.json',
+      'data/templates/13mars/template.json',
+      'data/templates/yfc-logo/template.json',
+      'data/templates/profile/fr/template.json',
       'data/templates/date-2/fr/template.json',
-      'data/templates/map/de/template.json',
+      'data/templates/date-2/de/template.json',
       'data/templates/map/fr/template.json',
-      'data/templates/date/de/template.json',
+      'data/templates/map/de/template.json',
       'data/templates/date/fr/template.json',
-      'data/templates/countdown/de/template.json',
+      'data/templates/date/de/template.json',
       'data/templates/countdown/fr/template.json',
+      'data/templates/countdown/de/template.json',
       'data/templates/checklist/template.json',
       'data/templates/imperative/template.json',
       'data/templates/influence/template.json',
@@ -33,12 +33,12 @@ const app = new Vue({
       'data/templates/pride/template.json',
       'data/templates/quote/template.json',
       'data/templates/sentence/template.json',
+      'data/templates/support/template.json',
       'data/templates/flyer2911/template.json',
-      'data/templates/yfc-logo/template.json',
-      'data/templates/flocage/template.json',
-      'data/templates/profile/fr/template.json',
-      'data/templates/13mars/template.json'
-
+      'data/templates/thanks/template.json',
+      'data/templates/map1701/template.json',
+      'data/templates/fff/template.json',
+      'data/templates/flocage/template.json'
     ],
     __docIndex: 0,
     __activeTemplate: null,
@@ -59,6 +59,20 @@ const app = new Vue({
   computed: {
 
   },
+  mounted() {
+    const loadChecker = setInterval(function() {
+      //console.log("!!!");
+      if (app.templates) {
+        clearInterval(loadChecker);
+
+        const loadTemplateId = Number(location.hash.substring(1));
+
+        if (loadTemplateId) {
+          app.openTemplate(loadTemplateId - 1);
+        }
+      }
+    }, 10);
+  },
   methods: {
     menuAction() {
       this.menuOpen = !this.menuOpen;
@@ -70,6 +84,11 @@ const app = new Vue({
       // Get index from selected list item
       const templateIndex = Array.from(selectedLi.parentNode.children).indexOf(selectedLi);
 
+      this.openTemplate(templateIndex);
+    },
+    openTemplate(templateIndex) {
+      location.hash = templateIndex + 1;
+
       const template = this.templates[templateIndex];
 
       this.__activeTemplate = template;
@@ -80,7 +99,6 @@ const app = new Vue({
       const docSelector = document.querySelector(".select-doc");
       docSelector.clear();
       docSelector.append(...template.documents.map((doc, i) => {
-        console.log(doc);
         const opt = Object.assign(document.createElement("option"), {
           value: i
         });
@@ -89,9 +107,11 @@ const app = new Vue({
       }));
       docSelector.value = 0;
 
-      docSelector.onchange = function() {
-        const index = Number(this.value);
-        console.log(index);
+      const self = this;
+
+      docSelector.onchange = () => {
+        const index = Number(docSelector.value);
+        console.log(index, self);
 
         self.__render = loadTemplate(self.__activeTemplate, index);
 
@@ -145,9 +165,12 @@ const app = new Vue({
           template: this.__activeTemplate,
           doc: this.__docIndex,
           data: dataset,
-          renderings: 1
+          renderings: 1,
+          delay: 250
         })
       });
+
+      console.log(dataset);
 
       const blob = await (await response1).blob();
       const url = URL.createObjectURL(blob);
@@ -172,7 +195,8 @@ const app = new Vue({
           template: this.__activeTemplate,
           doc: this.__docIndex,
           data: dataset,
-          renderings: 1
+          renderings: 1,
+          delay: 0
         })
       });
 
@@ -236,8 +260,6 @@ const app = new Vue({
     }
   }
 });
-
-
 
 
 

@@ -1,19 +1,19 @@
 {
   "name": "Date 2",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date-2/template.json",
-  "preview": "data/templates/date-2/de/preview.jpg",
+  "preview": "data/templates/date-2/preview.jpg",
   "type": "jpg",
   "documents": [
     {
       "width": 1200,
       "height": 1200,
-      "src": "data/templates/date-2/de/1200x1200.svg",
+      "src": "data/templates/date-2/1200x1200.svg",
       "alias": "Facebook, Instagram"
     },
     {
       "width": 1200,
       "height": 675,
-      "src": "data/templates/date-2/de/1200x675.svg",
+      "src": "data/templates/date-2/1200x675.svg",
       "alias": "Twitter"
     }
   ],
@@ -50,12 +50,33 @@
       "description": "Background",
       "key": "backgroundImage",
       "default": {
-        "data": "data/templates/date-2/de/bg.jpg"
+        "data": "data/templates/date-2/bg.jpg"
       },
       "properties": {
         "items": [
           {
             "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "StockFootage",
+      "description": "Background",
+      "key": "image",
+      "default": {
+        "data": "data/templates/date-2/bg.jpg"
+      },
+      "properties": {
+        "databases": [
+          {
+            "type": "ResourceSpace",
+            "label": "FFF Original",
+            "host": "bilder.fffutu.re"
+          },
+          {
+            "type": "Pexels",
+            "label": "Pexels"
           }
         ]
       }

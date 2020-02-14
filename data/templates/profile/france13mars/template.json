@@ -13,8 +13,8 @@
   "fonts": [
     {
       "name": "Gotham-Bold",
-      "src": "fonts/Gotham/gotham-medium.otf",
-      "mime": "font/opentype"
+      "src": "fonts/Gotham/gotham-bold.ttf",
+      "mime": "font/truetype"
     }
   ],
   "fields": [

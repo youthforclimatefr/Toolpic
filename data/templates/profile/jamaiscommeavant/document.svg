@@ -58,11 +58,7 @@
     	c-69.96-0.12-176.33-8.9-296-54C513.21,1654.78,443.5,1610.48,395,1574z"/>
     <path id="SVGID_x5F_1_x5F_" class="st1" d="M1040.33,278.51c343.41,77.33,559.11,418.41,481.78,761.82s-418.41,559.11-761.82,481.78
     	S201.18,1103.71,278.51,760.3S696.92,201.18,1040.33,278.51z"/>
-    <text>
-      <textPath xlink:href="#SVGID_x5F_1_x5F_" startOffset="98.1487%">
-        <tspan class="st3" style="fill: #FFFFFF; font-family:'Gotham-Bold'; font-size:236px; letter-spacing:46;">170px{{ date }}</tspan>
-      </textPath>
-    </text>
+
 
     <path style="fill: #457828; stroke: none;" d="M 900,0 A 900,900 0 1 1 899.9,0" id="circle1" />
 

@@ -18,7 +18,7 @@ const app = new Vue({
       'data/templates/profile/france13mars/template.json',
       'data/templates/profile/hamburg2020/template.json',
       'data/templates/profile/dieuhrtickt/template.json',
-      'data/templates/profile/jamaiscommeavant/template.json',
+      'data/templates/profile/coronavirus/template.json',
       'data/templates/profile/de/template.json',
       'data/templates/date-2/fr/template.json',
       'data/templates/date-2/de/template.json',
@@ -157,7 +157,7 @@ const app = new Vue({
       this.renderedImage = null;
 
       const endpoint = 'https://panel.becauseofprog.fr:65324/emulate';
-      //const endpoint = 'http://localhost:65324/emulate'
+      //const endpoint = 'http://localhost:8083/emulate'
 
       const format = this.__activeTemplate.type ? this.__activeTemplate.type : "png";
 

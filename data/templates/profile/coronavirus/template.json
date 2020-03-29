@@ -1,12 +1,12 @@
 {
   "name": "JamaisCommeAvant",
-  "root": "https://toolpic.youthforclimate.fr/templates/profile/jamaiscommeavant/template.json",
-  "preview": "data/templates/profile/jamaiscommeavant/preview.png",
+  "root": "https://toolpic.youthforclimate.fr/templates/profile/coronavirus/template.json",
+  "preview": "data/templates/profile/coronavirus/preview.png",
   "documents": [
     {
       "width": 1200,
       "height": 1200,
-      "src": "data/templates/profile/jamaiscommeavant/document.svg",
+      "src": "data/templates/profile/coronavirus/document.svg",
       "alias": "1:1"
     }
   ],

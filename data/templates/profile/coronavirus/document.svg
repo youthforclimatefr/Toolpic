@@ -63,7 +63,7 @@
     <path style="fill: #457828; stroke: none;" d="M 900,0 A 900,900 0 1 1 899.9,0" id="circle1" />
 
     <g style="transform-origin: 50% 50%; transform: rotate(-70deg);">
-      <text style="font-family: 'Gotham-Bold'; font-size: 230px; fill: #FFFFFF; letter-spacing: 40px;">
+      <text style="font-family: 'Gotham-Bold'; font-size: 230px; fill: #FABC37; letter-spacing: 40px;">
         <textPath xlink:href="#circle1" style="alignment-baseline: hanging;">
           <tspan x="0" dy="210">
             {{ date }}

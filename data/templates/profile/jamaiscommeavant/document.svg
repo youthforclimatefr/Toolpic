@@ -1,0 +1,92 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1800 1800" style="enable-background:new 0 0 1800 1800;" xml:space="preserve">
+  <defs>
+    <style type="text/css">
+      .st0{
+        fill:#457828;
+      }
+      .st1{
+        fill:none;
+      }
+      .st2{
+        fill:#EF454E;
+      }
+      .st3{
+        fill:#FFFFFF;
+      }
+      .st4{
+        font-family:'Gotham-Bold';
+      }
+      .st5{
+        font-size:160px;
+      }
+      .st6{
+        letter-spacing:7;
+      }
+      .st7{
+        font-family:'Gotham-Bold';
+      }
+      .st8{
+        font-size:74px;
+      }
+      .subtitle {
+        font-family: 'Gotham-Bold';
+        letter-spacing: 7px;
+      }
+    </style>
+
+
+    <clipPath id="circle-outer">
+      <path d="M 900,0 A 900,900 0 1 1 899.9,0" />
+    </clipPath>
+
+    <clipPath id="circle-inner">
+      <circle cx="900" cy="900" r="635" />
+    </clipPath>
+  </defs>
+  <g class="main">
+    <circle class="st0" cx="900" cy="900" r="842.5"/>
+    <g>
+    	<defs>
+    		<ellipse id="Foto" cx="900.04" cy="899.95" rx="601.02" ry="600.97"/>
+    	</defs>
+    	<use xlink:href="#Foto"  style="overflow:visible;fill:#FFFFFF;"/>
+    	<clipPath id="Foto_1_">
+    		<use xlink:href="#Foto"  style="overflow:visible;"/>
+    	</clipPath>
+    </g>
+    <path class="st0" d="M395,1574l1022-9c-51.92,40.49-135.22,95.68-249,134c-108.4,36.51-203.63,43.95-268,44
+    	c-69.96-0.12-176.33-8.9-296-54C513.21,1654.78,443.5,1610.48,395,1574z"/>
+    <path id="SVGID_x5F_1_x5F_" class="st1" d="M1040.33,278.51c343.41,77.33,559.11,418.41,481.78,761.82s-418.41,559.11-761.82,481.78
+    	S201.18,1103.71,278.51,760.3S696.92,201.18,1040.33,278.51z"/>
+    <text>
+      <textPath xlink:href="#SVGID_x5F_1_x5F_" startOffset="98.1487%">
+        <tspan class="st3" style="fill: #FFFFFF; font-family:'Gotham-Bold'; font-size:236px; letter-spacing:46;">170px{{ date }}</tspan>
+      </textPath>
+    </text>
+
+    <path style="fill: #457828; stroke: none;" d="M 900,0 A 900,900 0 1 1 899.9,0" id="circle1" />
+
+    <g style="transform-origin: 50% 50%; transform: rotate(-70deg);">
+      <text style="font-family: 'Gotham-Bold'; font-size: 230px; fill: #FFFFFF; letter-spacing: 40px;">
+        <textPath xlink:href="#circle1" style="alignment-baseline: hanging;">
+          <tspan x="0" dy="210">
+            {{ date }}
+          </tspan>
+        </textPath>
+      </text>
+    </g>
+
+    <g clip-path="url(#circle-inner)">
+      <g style="transform-origin: 50% 50%; transform: scale(0.71);">
+        <image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="0" style="transform-origin: 50% 50%;" />
+      </g>
+    </g>
+
+
+
+    <path class="st2" d="M163,1409"/>
+
+  </g>
+
+
+</svg>

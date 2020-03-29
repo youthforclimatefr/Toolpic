@@ -1,0 +1,46 @@
+{
+  "name": "JamaisCommeAvant",
+  "root": "https://toolpic.youthforclimate.fr/templates/profile/jamaiscommeavant/template.json",
+  "preview": "data/templates/profile/jamaiscommeavant/preview.png",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "data/templates/profile/jamaiscommeavant/document.svg",
+      "alias": "1:1"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Gotham-Bold",
+      "src": "fonts/Gotham/gotham-bold.ttf",
+      "mime": "font/truetype"
+    }
+  ],
+  "fields": [
+    {
+      "type": "Selection",
+      "description": "Background",
+      "key": "pic",
+      "default": {
+        "data": "data/templates/profile/fr/bg.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Line",
+      "description": "Date",
+      "key": "date",
+      "default": "#JamaisCommeAvant",
+      "properties": {
+
+      }
+    }
+  ]
+}

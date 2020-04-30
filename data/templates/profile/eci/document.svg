@@ -3,7 +3,11 @@
 <svg version="1.1" id="Eci_profilbildgenerator_xA0_Bild_1_"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 432 432"
 	 style="enable-background:new 0 0 432 432;" xml:space="preserve">
-
+<defs>
+<clipPath id="circle-inner">
+    <circle cx="900" cy="900" r="635" />
+</clipPath>
+</defs>
 <image style="overflow:visible;" width="1800" height="1800" id="Eci_profilbildgenerator_xA0_Bild" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABwwAAAcMCAYAAAC66XfqAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAIerFJREFUeNrs3XmYJOV94Pnf+75x
 ZGZdXdUn3TTNfYM4JEGDQC0QICR75EuyNfJ61t7ZlQ8ZS7L92J59dnt4nt0deWQbCx2z2j/G83ht
@@ -9757,9 +9761,11 @@ pIh4Zi5u28qwCq59bH5jJgapktT2J5fNvJx3hge90zO1TQbt0KDN7zRxzuyqhtlfVTPJtte9WTsD
 Z9YsVbNYGYsVwzA5ddjrmEXTbKtBGadNIQ4mHSe+e4cj+gAAAAAWuv8PNcyF6QSEM90AAAAASUVO
 RK5CYII=" transform="matrix(0.24 0 0 0.24 0 0)">
 </image>
-<g clip-path="url(#circle-inner)">
-<g style="transform-origin: 50% 50%; transform: scale(0.71);">
-  <image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="0" style="transform-origin: 50% 50%;" />
-</g>
+<g class="main">
+	<g clip-path="url(#circle-inner)">
+		<g style="transform-origin: 50% 50%; transform: scale(0.71);">
+  			<image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="0" style="transform-origin: 50% 50%;" />
+		</g>
+	</g>
 </g>
 </svg>

@@ -12,6 +12,7 @@ const app = new Vue({
   data: {
     menuOpen: true,
     templateUrls: [
+      'data/templates/profile/eci/template.json',
       'data/templates/13mars/template.json',
       'data/templates/yfc-logo/template.json',
       'data/templates/profile/fr/template.json',

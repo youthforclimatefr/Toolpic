@@ -1,0 +1,31 @@
+{
+  "name": "ECI",
+  "root": "https://toolpic.youthforclimate.fr/templates/profile/eci/template.json",
+  "preview": "data/templates/profile/eci/preview.png",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "data/templates/profile/eci/document.svg",
+      "alias": "1:1"
+    }
+  ],
+  "fonts": [],
+  "fields": [
+    {
+      "type": "Selection",
+      "description": "Background",
+      "key": "pic",
+      "default": {
+        "data": "data/templates/profile/fr/bg.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

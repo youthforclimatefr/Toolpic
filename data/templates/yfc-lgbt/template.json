@@ -1,0 +1,54 @@
+{
+  "name": "YFC LGBT",
+  "root": "https://gh.becauseofprog.fr/sites/toolpic2/data/templates/yfc-lgbt/template.json",
+  "preview": "data/templates/yfc-lgbt/preview.svg",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "data/templates/yfc-lgbt/document.svg",
+      "alias": "1:1"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "GothamBold",
+      "src": "fonts/Gotham/gotham-medium.otf",
+      "mime": "font/opentype"
+    },
+    {
+      "name": "GothamUltra",
+      "src": "fonts/Gotham/gotham-ultra.otf",
+      "mime": "font/opentype"
+    }
+  ],
+  "fields": [
+
+    {
+      "type": "Line",
+      "description": "Ville du GL",
+      "key": "title",
+      "default": "Vannes",
+      "properties": {
+
+      }
+
+    },
+    {
+      "type": "Selection",
+      "description": "Fond de l'image",
+      "key": "backgroundImage",
+      "default": {
+        "data": "data/templates/yfc-lgbt/yfc-lgbtplus-2.png"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "data/templates/yfc-lgbt/yfc-lgbtplus-2.png"
+          }
+        ]
+      }
+    }
+  ]
+}

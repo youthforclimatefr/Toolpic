@@ -1,0 +1,58 @@
+<svg
+  id="Logo YFC LGBT"
+  data-name="Logo YFC LGBT"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 447.74 443.08"
+>
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 24px;
+        fill: #34b06f;
+        font-family: GothamBold;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        text-align:right;
+        text-transform: uppercase;
+        font-variant: small-caps;
+        font-variant-caps: small-caps; 
+      }
+      .cls-2 {
+        font-size: 29.12px;
+        letter-spacing: -0.01em;
+      }
+      .cls-2,
+      .cls-6 {
+        fill: #457b2f;
+      }
+      .cls-2,
+      .cls-3 {
+        font-family: GothamUltra;
+      }
+      .cls-3 {
+        font-size: 57px;
+        letter-spacing: -0.03em;
+      }
+      .cls-4 {
+        fill: #c6d62f;
+      }
+      .cls-5 {
+        fill: #b1bb34;
+      }
+      .cls-7 {
+        fill: none;
+        stroke: #b1bb34;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <title>Logo YFC LGBT</title>
+  
+  <g id="Texte" class="main">
+    <image v-if="typeof backgroundImage == 'object'" v-bind:xlink:href="backgroundImage.data" v-fitimage style="transform-origin: 50% 50%;" />
+    <text font-variant="small-caps" class="cls-1"  transform="translate(302 315)" v-bind:arg="title" text-anchor="end">
+      {{ title.toUpperCase() }}
+    </text>
+  </g>
+</svg>

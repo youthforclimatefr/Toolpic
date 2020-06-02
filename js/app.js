@@ -45,7 +45,8 @@ const app = new Vue({
       'data/templates/map1701/template.json',
       'data/templates/fff/template.json',
       'data/templates/flocage/template.json',
-      'data/templates/yfc-lgbt/template.json'
+      'data/templates/yfc-lgbt/template.json',
+      'data/templates/yfc-lgbt-pp/template.json'
     ],
     __docIndex: 0,
     __activeTemplate: null,

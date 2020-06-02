@@ -1,0 +1,36 @@
+{
+  "name": "YFC LGBT",
+  "root": "https://gh.becauseofprog.fr/sites/toolpic2/data/templates/yfc-lgbt-pp/template.json",
+  "preview": "data/templates/yfc-lgbt-pp/preview.png",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "data/templates/yfc-lgbt-pp/document.svg",
+      "alias": "1:1"
+    }
+  ],
+  "fonts": [],
+  "fields": [
+
+    {
+      "type": "Selection",
+      "description": "Photo de profil",
+      "key": "pic",
+      "default": {
+        "data": "data/templates/profile/fr/bg.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "data/templates/profile/fr/bg.jpg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "YFC LGBT",
   "root": "https://gh.becauseofprog.fr/sites/toolpic2/data/templates/yfc-lgbt/template.json",
-  "preview": "data/templates/yfc-lgbt/preview.svg",
+  "preview": "data/templates/yfc-lgbt/yfc-lgbtplus-2.png",
   "documents": [
     {
       "width": 1200,
@@ -46,6 +46,9 @@
           {
             "type": "value",
             "value": "data/templates/yfc-lgbt/yfc-lgbtplus-2.png"
+          },
+          {
+            "type": "file"
           }
         ]
       }

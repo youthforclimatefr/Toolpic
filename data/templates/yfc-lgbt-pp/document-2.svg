@@ -6,23 +6,24 @@
 >
   <defs>
     <clipPath id="circle-inner">
-      <circle cx="600" cy="600" r="510" />
+      <circle cx="600" cy="600" r="600" />
     </clipPath>
   </defs>
   <title>Photo de profil YFC LGBT</title>
 
-  <rect fill="#750787" width="1200" height="1200"/>
-  <rect fill="#004dff" width="1200" height="1000"/>
-  <rect fill="#008026" width="1200" height="800"/>
-  <rect fill="#ffed00" width="1200" height="600"/>
-  <rect fill="#ff8c00" width="1200" height="400"/>
-  <rect fill="#e40303" width="1200" height="200"/>
+  <rect fill="#ffffff" width="1200" height="1200"/>
   
   <g class="main">
-    <g clip-path="url(#circle-inner)">
-      <g style="transform-origin: 50% 50%; transform: scale(0.86);">
-        <image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="pos" style="transform-origin: 50% 50%;" />
-      </g>
+    <g style="transform-origin: 50% 50%;">
+      <image v-bind:xlink:href="pic.data" v-fitimage v-bind:data-image-pos="pos" style="transform-origin: 50% 50%;" />
+    </g>
+    <g style="transform-origin: 1000px 300px; transform: rotate(-16deg);">
+      <rect fill="#750787" width="1400" height="120"/>
+      <rect fill="#004dff" width="1400" height="100"/>
+      <rect fill="#008026" width="1400" height="80"/>
+      <rect fill="#ffed00" width="1400" height="60"/>
+      <rect fill="#ff8c00" width="1400" height="40"/>
+      <rect fill="#e40303" width="1400" height="20"/>
     </g>
     <circle
       fill="#FFFFFF"
